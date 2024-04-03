@@ -1,0 +1,6 @@
+framework module Pods_ConnectedIn {
+  umbrella header "Pods-ConnectedIn-umbrella.h"
+
+  export *
+  module * { export * }
+}

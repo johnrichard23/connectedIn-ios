@@ -1,0 +1,6 @@
+framework module Pods_ConnectedIn_ConnectedInUITests {
+  umbrella header "Pods-ConnectedIn-ConnectedInUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
