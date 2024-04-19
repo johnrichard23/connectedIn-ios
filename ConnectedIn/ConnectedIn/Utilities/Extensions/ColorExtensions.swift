@@ -17,4 +17,6 @@ extension Color{
     }
     
     static let connectedInMain = Color(hex: 0x199779, opacity: 1.0)
+    static let connectedInFB = Color(hex: 0x4267B2, opacity: 1.0)
+    static let connectedInRed = Color(hex: 0x971921, opacity: 1.0)
 }
