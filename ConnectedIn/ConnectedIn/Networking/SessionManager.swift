@@ -28,4 +28,12 @@ final class SessionManager: ObservableObject {
     func getCurrentAuthUser() {
         authState = .onboarding
     }
+    
+    func showLogin() {
+        
+    }
+    
+    func showSignUp() {
+        
+    }
 }

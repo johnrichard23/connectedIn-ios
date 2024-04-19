@@ -36,7 +36,7 @@ struct LandingView: View {
             
             VStack {
                 Text("Connect. Collaborate. Contribute.")
-                    .font(.custom("Roboto-Regular", size: 13))
+                    .font(.system(size: 13, weight: .regular))
                     .foregroundColor(.white)
                     .padding(.bottom, 230)
                     .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
@@ -56,14 +56,14 @@ struct LandingView: View {
                         .padding(.vertical, 20)
                         .background(Color.connectedInMain)
                         .cornerRadius(5)
-                        .font(.custom("Roboto-Bold", size: 16))
+                        .font(.system(size: 16, weight: .regular))
                         .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
                         .tracking(1.0)
                         .shadow(color: Color.black.opacity(0.5), radius: 1, x: 0, y: 1.5)
                 }
             }.padding(.vertical, 75)
                 .fullScreenCover(isPresented: $isPresented) {
-                    FirstOnboardingScreenView()
+                    OnboardingView()
             }
         }
     }
