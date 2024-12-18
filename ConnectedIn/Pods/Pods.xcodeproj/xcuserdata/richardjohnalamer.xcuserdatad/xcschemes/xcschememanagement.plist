@@ -4,26 +4,100 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-ConnectedIn-ConnectedInUITests.xcscheme</key>
+		<key>AWSAuthCore.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<true/>
 		</dict>
-		<key>Pods-ConnectedIn.xcscheme</key>
+		<key>AWSCognitoIdentityProvider.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<true/>
 		</dict>
-		<key>Pods-ConnectedInTests.xcscheme</key>
+		<key>AWSCognitoIdentityProviderASF.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<true/>
+		</dict>
+		<key>AWSComprehend.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>AWSCore.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>AWSMobileClient.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>AWSPluginsCore.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>AWSPolly.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>AWSPredictionsPlugin.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>AWSRekognition.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>AWSTextract.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>AWSTranscribeStreaming.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>AWSTranslate.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>Amplify.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>AmplifyPlugins.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>CoreMLPredictionsPlugin.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>Pods-ConnectedIn-ConnectedInUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>Pods-ConnectedIn.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+		</dict>
+		<key>Pods-ConnectedInTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

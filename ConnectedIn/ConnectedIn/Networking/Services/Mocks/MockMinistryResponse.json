@@ -1,0 +1,136 @@
+{
+    "ministries": [
+        {
+            "id": "MIN-001",
+            "name": "Open Hands",
+            "description": "Helping Communities, Changing Lives, Glorifying God.",
+            "avatarUrl": "ministry1",
+            "phone": "+1 234 567 8900",
+            "email": "contact@sampleministry.com",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "location": "Sorsogon City",
+            "photos": [
+                "church1",
+                "church2",
+                "church3",
+                "church4",
+                "church5",
+                "church6"
+            ],
+            "donations": {
+                "gcashNumber": "09171234567",
+                "bankAccount": {
+                    "accountNumber": "1234567890",
+                    "bankName": "Bank of the Philippine Islands"
+                }
+            }
+        },
+        {
+            "id": "MIN-002",
+            "name": "Youth Ministry",
+            "description": "Supporting youth across the globe.",
+            "avatarUrl": "ministry2",
+            "phone": "+1 234 567 8900",
+            "email": "contact@sampleministry.com",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "location": "South Africa",
+            "photos": [
+                "church1",
+                "church2",
+                "church3",
+                "church4",
+                "church5",
+                "church6"
+            ],
+            "donations": {
+                "gcashNumber": "09171234567",
+                "bankAccount": {
+                    "accountNumber": "1234567890",
+                    "bankName": "Bank of the Philippine Islands"
+                }
+            }
+        },
+        {
+            "id": "MIN-003",
+            "name": "Bicol Captures",
+            "description": "Christian community of photographers",
+            "avatarUrl": "ministry3",
+            "phone": "+1 234 567 8900",
+            "email": "contact@sampleministry.com",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "location": "Sorsogon City, Philippines",
+            "photos": [
+                "church1",
+                "church2",
+                "church3",
+                "church4",
+                "church5",
+                "church6"
+            ],
+            "donations": {
+                "gcashNumber": "09171234567",
+                "bankAccount": {
+                    "accountNumber": "1234567890",
+                    "bankName": "Bank of the Philippine Islands"
+                }
+            }
+        },
+        {
+            "id": "MIN-004",
+            "name": "Women's Ministry",
+            "description": "Empowering women in faith.",
+            "avatarUrl": "ministry4",
+            "phone": "+1 234 567 8900",
+            "email": "contact@samplemissionary.com",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "location": "Cebu City",
+            "photos": [
+                "church1",
+                "church2",
+                "church3",
+                "church4",
+                "church5",
+                "church6"
+            ],
+            "donations": {
+                "gcashNumber": "09171234567",
+                "bankAccount": {
+                    "accountNumber": "1234567890",
+                    "bankName": "Bank of the Philippine Islands"
+                }
+            }
+        },
+        {
+            "id": "MIN-005",
+            "name": "CrossDrive Missions",
+            "description": "Young missionaries for Christ",
+            "avatarUrl": "ministry5",
+            "phone": "+1 234 567 8900",
+            "email": "contact@sampleministry.com",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "location": "Sorsogon City",
+            "photos": [
+                "church1",
+                "church2",
+                "church3",
+                "church4",
+                "church5",
+                "church6"
+            ],
+            "donations": {
+                "gcashNumber": "09171234567",
+                "bankAccount": {
+                    "accountNumber": "1234567890",
+                    "bankName": "Bank of the Philippine Islands"
+                }
+            }
+        }
+    ]
+}
+
+

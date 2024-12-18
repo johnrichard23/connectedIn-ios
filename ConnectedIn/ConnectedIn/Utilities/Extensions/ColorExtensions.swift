@@ -19,4 +19,14 @@ extension Color{
     static let connectedInMain = Color(hex: 0x199779, opacity: 1.0)
     static let connectedInFB = Color(hex: 0x4267B2, opacity: 1.0)
     static let connectedInRed = Color(hex: 0x971921, opacity: 1.0)
+    static let connectedInHomeBG = Color(hex: 0xF6F4F4, opacity: 1.0)
+    static let connectedInCommunityCardBG = Color(hex: 0xc8dae7, opacity: 1.0)
+    static let connectedTopHeaderBG = Color(hex: 0xc8dae7, opacity: 1.0)
+    
+    static let lightGray = Color(hex: 0xE0E0E0, opacity: 1.0)
+    static let softBeige = Color(hex: 0xF0E6D6, opacity: 1.0)
+    static let darkGray = Color(hex: 0x333333, opacity: 1.0)
+    
+    static let dashboardHeaderColor = Color(red: 54/255, green: 112/255, blue: 110/255)
+    
 }

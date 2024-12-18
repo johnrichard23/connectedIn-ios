@@ -1,0 +1,225 @@
+{
+    "churches": [
+        {
+            "id": "CH-001",
+            "name": "FFBC Sorsogon",
+            "description": "A vibrant church community committed to serving God through worship, outreach, and fellowship. Known for its active participation in local outreach programs and support for the underprivileged.",
+            "avatarUrl": "image1",
+            "shortDescription": "Serving the community with faith and compassion.",
+            "phone": "+1 234 567 8900",
+            "email": "contact@samplechurch.com",
+            "address": "Rizal St. Piot, Sorsogon City",
+            "countryGroup": "Luzon",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "serviceTimes": ["Sunday 9:00 AM", "Sunday 11:00 AM"],
+            "latitude": 12.971171462209702,
+            "longitude": 123.99494193087725,
+            "region": "Bicol Region",
+            "socialLinks": {
+                "facebookUrl": "https://www.facebook.com/SORFIRSTFUNDAMENTALBAPTISTCHURCH"
+            },
+            "photos": [
+                "church1",
+                "church2",
+                "church3",
+                "church4",
+                "church5",
+                "church6"
+            ],
+            "donations": {
+                "gcashNumber": "09171234567",
+                "bankAccount": {
+                    "accountNumber": "1234567890",
+                    "bankName": "Bank of the Philippine Islands"
+                }
+            }
+        },
+        {
+            "id": "CH-002",
+            "name": "Heritage Baptist Church",
+            "description": "A welcoming community dedicated to spreading the Gospel and supporting each other in faith. Offers various programs for all age groups and focuses on community service.",
+            "avatarUrl": "image2",
+            "shortDescription": "Growing in faith, serving with love.",
+            "phone": "+1 234 567 8900",
+            "email": "contact@samplechurch.com",
+            "address": "123 Main St, Davao City",
+            "countryGroup": "Mindanao",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "serviceTimes": ["Sunday 9:00 AM", "Sunday 11:00 AM"],
+            "latitude": 7.0707,
+            "longitude": 125.6087,
+            "region": "Davao Region",
+            "socialLinks": {
+                "facebookUrl": "https://www.facebook.com/HeritageBaptistChurch"
+            },
+            "photos": [
+                "https://example.com/images/heritage-baptist-photo1.jpg",
+                "https://example.com/images/heritage-baptist-photo2.jpg"
+            ],
+            "donations": {
+                "gcashNumber": "09187654321",
+                "bankAccount": {
+                    "accountNumber": "0987654321",
+                    "bankName": "Landbank of the Philippines"
+                }
+            }
+        },
+        {
+            "id": "CH-003",
+            "name": "Grace Community Church",
+            "description": "A diverse and inclusive congregation focused on building strong relationships and fostering spiritual growth.",
+            "avatarUrl": "image3",
+            "shortDescription": "Embracing grace, building community.",
+            "phone": "+1 234 567 8900",
+            "email": "contact@samplechurch.com",
+            "address": "456 Church St, Cebu City",
+            "countryGroup": "Visayas",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "serviceTimes": ["Sunday 9:00 AM", "Sunday 11:00 AM"],
+            "latitude": 10.3157,
+            "longitude": 123.8854,
+            "region": "Central Visayas",
+            "socialLinks": {
+                "facebookUrl": "https://www.facebook.com/GraceCommunityChurchCebu"
+            },
+            "photos": [
+                "https://example.com/images/grace-community-photo1.jpg",
+                "https://example.com/images/grace-community-photo2.jpg"
+            ],
+            "donations": {
+                "gcashNumber": "09191234567",
+                "bankAccount": {
+                    "accountNumber": "1122334455",
+                    "bankName": "BDO Unibank"
+                }
+            }
+        },
+        {
+            "id": "CH-004",
+            "name": "Casiguran FBC",
+            "description": "A diverse and inclusive congregation focused on building strong relationships and fostering spiritual growth.",
+            "avatarUrl": "image4",
+            "shortDescription": "Embracing grace, building community.",
+            "phone": "+1 234 567 8999",
+            "email": "contact@samplechurch.com",
+            "address": "Casiguran, Sorsogon",
+            "countryGroup": "Luzon",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "serviceTimes": ["Sunday 9:00 AM", "Sunday 11:00 AM"],
+            "latitude": 12.87319358612542,
+            "longitude": 124.00982772749697,
+            "region": "Bicol Region",
+            "socialLinks": {
+                "facebookUrl": "https://www.facebook.com/GraceCommunityChurchCebu"
+            },
+            "photos": [
+                "https://example.com/images/grace-community-photo1.jpg",
+                "https://example.com/images/grace-community-photo2.jpg"
+            ],
+            "donations": {
+                "gcashNumber": "09191234888",
+                "bankAccount": {
+                    "accountNumber": "1122334455",
+                    "bankName": "BDO Unibank"
+                }
+            }
+        },
+        {
+            "id": "CH-005",
+            "name": "Manila Baptist Church",
+            "description": "A diverse and inclusive congregation focused on building strong relationships and fostering spiritual growth.",
+            "avatarUrl": "image5",
+            "shortDescription": "Embracing grace, building community.",
+            "phone": "+1 234 567 7323",
+            "email": "contact@samplechurch.com",
+            "address": "Metro Manila",
+            "countryGroup": "Luzon",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "serviceTimes": ["Sunday 9:00 AM", "Sunday 11:00 AM"],
+            "latitude": 14.580245619173477,
+            "longitude": 120.98696685501119,
+            "region": "NCR",
+            "socialLinks": {
+                "facebookUrl": "https://www.facebook.com/GraceCommunityChurchCebu"
+            },
+            "photos": [
+                "https://example.com/images/grace-community-photo1.jpg",
+                "https://example.com/images/grace-community-photo2.jpg"
+            ],
+            "donations": {
+                "gcashNumber": "09191231234",
+                "bankAccount": {
+                    "accountNumber": "1122338877",
+                    "bankName": "BDO Unibank"
+                }
+            }
+        },
+        {
+            "id": "CH-006",
+            "name": "Valencia Baptist Church",
+            "description": "A diverse and inclusive congregation focused on building strong relationships and fostering spiritual growth.",
+            "avatarUrl": "image7",
+            "shortDescription": "Embracing grace, building community.",
+            "phone": "+1 234 567 7323",
+            "email": "contact@samplechurch.com",
+            "address": "Valencia, Bukidnon",
+            "countryGroup": "Mindanao",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "serviceTimes": ["Sunday 9:00 AM", "Sunday 11:00 AM"],
+            "latitude": 7.905162871777682,
+            "longitude": 125.09329608192422,
+            "region": "Northern Mindanao",
+            "socialLinks": {
+                "facebookUrl": "https://www.facebook.com/GraceCommunityChurchCebu"
+            },
+            "photos": [
+                "https://example.com/images/grace-community-photo1.jpg",
+                "https://example.com/images/grace-community-photo2.jpg"
+            ],
+            "donations": {
+                "gcashNumber": "09191231234",
+                "bankAccount": {
+                    "accountNumber": "1122338877",
+                    "bankName": "BDO Unibank"
+                }
+            }
+        },
+        {
+            "id": "CH-007",
+            "name": "Maramag Baptist Church",
+            "description": "A diverse and inclusive congregation focused on building strong relationships and fostering spiritual growth.",
+            "avatarUrl": "image8",
+            "shortDescription": "Embracing grace, building community.",
+            "phone": "+1 234 567 7323",
+            "email": "contact@samplechurch.com",
+            "address": "Maramag, Bukidnon",
+            "countryGroup": "Mindanao",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "serviceTimes": ["Sunday 9:00 AM", "Sunday 11:00 AM"],
+            "latitude": 7.762271363935363,
+            "longitude": 125.0044648107589,
+            "region": "Northern Mindanao",
+            "socialLinks": {
+                "facebookUrl": "https://www.facebook.com/GraceCommunityChurchCebu"
+            },
+            "photos": [
+                "https://example.com/images/grace-community-photo1.jpg",
+                "https://example.com/images/grace-community-photo2.jpg"
+            ],
+            "donations": {
+                "gcashNumber": "09191231234",
+                "bankAccount": {
+                    "accountNumber": "1122338877",
+                    "bankName": "BDO Unibank"
+                }
+            }
+        }
+    ]
+}

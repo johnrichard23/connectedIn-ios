@@ -12,6 +12,12 @@ enum UserStatus: String {
     case STATUS_INACTIVE = "inactive"
 }
 
+struct LocalUser: Codable {
+    var email: String
+    var type: String
+    var token: String?
+}
+
 struct UserRole: Codable, Hashable {
     var id: Int
     var email: String
