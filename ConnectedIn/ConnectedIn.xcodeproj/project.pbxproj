@@ -26,8 +26,6 @@
 		69223DF92CDA70D7003C2A30 /* MissionaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69223DF82CDA70D7003C2A30 /* MissionaryViewModel.swift */; };
 		6937C7002CAEBC0A007D99EE /* FeaturedMinistryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937C6FF2CAEBC0A007D99EE /* FeaturedMinistryCardView.swift */; };
 		6939D07E2CA39C7700519392 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939D07D2CA39C7700519392 /* AuthViewModel.swift */; };
-		6939D0812CA3A39400519392 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6939D07F2CA3A39400519392 /* amplifyconfiguration.json */; };
-		6939D0822CA3A39400519392 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6939D0802CA3A39400519392 /* awsconfiguration.json */; };
 		695D1D6D2CD36BC30015827C /* ChurchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695D1D6C2CD36BC30015827C /* ChurchDetailView.swift */; };
 		695E38F82BBCF67F0053979E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E38F72BBCF67F0053979E /* OnboardingView.swift */; };
 		695E38FF2BBD324F0053979E /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E38FE2BBD324F0053979E /* OnboardingPage.swift */; };
@@ -90,8 +88,6 @@
 		69FB93BE2CAE762900F02190 /* FeaturedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93BD2CAE762900F02190 /* FeaturedCardView.swift */; };
 		69FB93C02CAE769300F02190 /* FeaturedChurchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93BF2CAE769300F02190 /* FeaturedChurchCardView.swift */; };
 		69FB93C22CAE78C300F02190 /* FeaturedMissionaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93C12CAE78C300F02190 /* FeaturedMissionaryCardView.swift */; };
-		8699F1FFF78BFA813A6ECCBA /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D0691ECD5AF3212D87ED8954 /* amplifyconfiguration.json */; };
-		AEC5C3EB15CA4A292458D462 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D3696F5EA58517CE4F4C83B /* awsconfiguration.json */; };
 		B1DA1F0D8834B09689FECC5D /* Pods_ConnectedIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF11EFF32E2ACD70BA19A3E5 /* Pods_ConnectedIn.framework */; };
 		D3A294A4B8B634855B0AF86A /* Pods_ConnectedInTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D62CA9BBDF60E0CF487CCBF /* Pods_ConnectedInTests.framework */; };
 /* End PBXBuildFile section */
@@ -121,7 +117,6 @@
 		2EBFB361CD57E957DF2BEC71 /* Pods-ConnectedIn.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn.release-prod.xcconfig"; path = "Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn.release-prod.xcconfig"; sourceTree = "<group>"; };
 		3D76688B802BCA79B0990DC2 /* Pods-ConnectedInTests.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedInTests.release-prod.xcconfig"; path = "Target Support Files/Pods-ConnectedInTests/Pods-ConnectedInTests.release-prod.xcconfig"; sourceTree = "<group>"; };
 		4B43F81C0E34DCEFFAFE393C /* Pods-ConnectedInTests.release-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedInTests.release-qa.xcconfig"; path = "Target Support Files/Pods-ConnectedInTests/Pods-ConnectedInTests.release-qa.xcconfig"; sourceTree = "<group>"; };
-		4D3696F5EA58517CE4F4C83B /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		5D73E8C3E092056F2E593AB1 /* Pods-ConnectedIn.debug-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn.debug-qa.xcconfig"; path = "Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn.debug-qa.xcconfig"; sourceTree = "<group>"; };
 		6360F8C015C133EC77783BF2 /* Pods-ConnectedIn-ConnectedInUITests.debug-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn-ConnectedInUITests.debug-qa.xcconfig"; path = "Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests.debug-qa.xcconfig"; sourceTree = "<group>"; };
 		639F2ED32A2F901CC44BBF01 /* Pods-ConnectedIn-ConnectedInUITests.debug-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn-ConnectedInUITests.debug-prod.xcconfig"; path = "Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests.debug-prod.xcconfig"; sourceTree = "<group>"; };
@@ -142,8 +137,6 @@
 		69223DF82CDA70D7003C2A30 /* MissionaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionaryViewModel.swift; sourceTree = "<group>"; };
 		6937C6FF2CAEBC0A007D99EE /* FeaturedMinistryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedMinistryCardView.swift; sourceTree = "<group>"; };
 		6939D07D2CA39C7700519392 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		6939D07F2CA3A39400519392 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
-		6939D0802CA3A39400519392 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 		695D1D6C2CD36BC30015827C /* ChurchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchDetailView.swift; sourceTree = "<group>"; };
 		695E38F72BBCF67F0053979E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		695E38FE2BBD324F0053979E /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
@@ -216,7 +209,6 @@
 		9D62CA9BBDF60E0CF487CCBF /* Pods_ConnectedInTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectedInTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9162A2849390D1FCF97771 /* Pods-ConnectedIn.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn.debug-dev.xcconfig"; path = "Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn.debug-dev.xcconfig"; sourceTree = "<group>"; };
 		B97998A7512446A26322C4A8 /* Pods-ConnectedIn-ConnectedInUITests.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn-ConnectedInUITests.debug-dev.xcconfig"; path = "Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests.debug-dev.xcconfig"; sourceTree = "<group>"; };
-		D0691ECD5AF3212D87ED8954 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		DF11EFF32E2ACD70BA19A3E5 /* Pods_ConnectedIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectedIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E238CE4E74ADB0E1D03923E7 /* Pods-ConnectedInTests.debug-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedInTests.debug-qa.xcconfig"; path = "Target Support Files/Pods-ConnectedInTests/Pods-ConnectedInTests.debug-qa.xcconfig"; sourceTree = "<group>"; };
 		F385307E269FD5500FE96A35 /* Pods-ConnectedIn-ConnectedInUITests.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn-ConnectedInUITests.release-prod.xcconfig"; path = "Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests.release-prod.xcconfig"; sourceTree = "<group>"; };
@@ -257,8 +249,6 @@
 		496CEBD8AAC7A3E9160364CE /* AmplifyConfig */ = {
 			isa = PBXGroup;
 			children = (
-				4D3696F5EA58517CE4F4C83B /* awsconfiguration.json */,
-				D0691ECD5AF3212D87ED8954 /* amplifyconfiguration.json */,
 			);
 			name = AmplifyConfig;
 			sourceTree = "<group>";
@@ -414,8 +404,6 @@
 		6999BD272BBA472A00082470 /* ConnectedIn */ = {
 			isa = PBXGroup;
 			children = (
-				6939D07F2CA3A39400519392 /* amplifyconfiguration.json */,
-				6939D0802CA3A39400519392 /* awsconfiguration.json */,
 				6913D9762C3847E7005EC42B /* Info.plist */,
 				6999BD5C2BBAF9CE00082470 /* Utilities */,
 				6999BD552BBA4EC500082470 /* Networking */,
@@ -903,12 +891,8 @@
 				6999BD302BBA472B00082470 /* Preview Assets.xcassets in Resources */,
 				6999BD2D2BBA472B00082470 /* Assets.xcassets in Resources */,
 				69223DF52CDA6B28003C2A30 /* MockMissionaryResponse.json in Resources */,
-				6939D0822CA3A39400519392 /* awsconfiguration.json in Resources */,
-				6939D0812CA3A39400519392 /* amplifyconfiguration.json in Resources */,
 				6913933F2CC2983D006111FC /* MockChurchResponse.json in Resources */,
 				69D6DE072CDB959C0053E1F3 /* MockMinistryResponse.json in Resources */,
-				AEC5C3EB15CA4A292458D462 /* awsconfiguration.json in Resources */,
-				8699F1FFF78BFA813A6ECCBA /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

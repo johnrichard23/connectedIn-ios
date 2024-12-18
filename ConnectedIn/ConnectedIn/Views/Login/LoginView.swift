@@ -36,6 +36,9 @@ struct LoginView: View {
     
     var body: some View {
         ZStack {
+            Color.white
+                .ignoresSafeArea()
+                .preferredColorScheme(.light)
             VStack(alignment: .leading, spacing: 15){
                 Spacer()
                 Image(connectedInLightLogo)
@@ -122,5 +125,3 @@ struct LoginView: View {
         }
     }
 }
-
-
