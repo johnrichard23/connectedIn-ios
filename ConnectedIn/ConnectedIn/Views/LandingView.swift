@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LandingView: View {
     @EnvironmentObject var sessionManager: SessionManager
+    @ObservedObject var tabStore: UserTabStore
+    @ObservedObject var dashboardStore: UserDashboardViewModel
     @State private var showingAlert = false
     @State var alertMessage: String = ""
     @State var landingScreenBG: String = "landingScreenBG"
@@ -49,6 +51,7 @@ struct LandingView: View {
                 Spacer()
                 Button(action: {
                     self.isPresented = true
+                    //UserDefaults.standard.set(true, forKey: "hasSeenOnboarding")
                 }) {
                     Text("Get Started")
                         .foregroundColor(.white)
@@ -63,7 +66,7 @@ struct LandingView: View {
                 }
             }.padding(.vertical, 75)
                 .fullScreenCover(isPresented: $isPresented) {
-                    OnboardingView()
+                    OnboardingView(tabStore: tabStore, dashboardStore: dashboardStore)
             }
         }
     }

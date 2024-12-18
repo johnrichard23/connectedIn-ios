@@ -7,9 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C7CE53D922AA464EA3B3328 /* Pods_ConnectedIn_ConnectedInUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4FF6AB174820A06AEF2E1C /* Pods_ConnectedIn_ConnectedInUITests.framework */; };
+		3FB63D4EA482AAD9793E966E /* Pods_ConnectedIn_ConnectedInUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A01268B6898406F2EE4D6BA /* Pods_ConnectedIn_ConnectedInUITests.framework */; };
+		6901AEB22BE5266300EDA966 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6901AEB12BE5266300EDA966 /* HomeView.swift */; };
+		6901AEB42BE526B800EDA966 /* UserDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6901AEB32BE526B800EDA966 /* UserDashboardViewModel.swift */; };
+		6901AEC32C1707AD00EDA966 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6901AEC22C1707AD00EDA966 /* UserDefaultsManager.swift */; };
+		6901AEC82C1B460E00EDA966 /* ChurchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6901AEC72C1B460E00EDA966 /* ChurchCardView.swift */; };
+		6901AECA2C1BF4D000EDA966 /* ChurchesAssociationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6901AEC92C1BF4D000EDA966 /* ChurchesAssociationView.swift */; };
+		691393372CC2286A006111FC /* ChurchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691393362CC2286A006111FC /* ChurchService.swift */; };
+		6913933B2CC23CEB006111FC /* ChurchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6913933A2CC23CEB006111FC /* ChurchViewModel.swift */; };
+		6913933E2CC240AA006111FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6913933D2CC240AA006111FC /* Constants.swift */; };
+		6913933F2CC2983D006111FC /* MockChurchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 6989C35C2CB7C1350033B308 /* MockChurchResponse.json */; };
+		6913D9732C3847B5005EC42B /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 6913D9722C3847B5005EC42B /* Amplify */; };
+		6913D9752C3847C5005EC42B /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 6913D9742C3847C5005EC42B /* AWSCognitoAuthPlugin */; };
+		691A9C4D2C49FEA100C1C395 /* Church.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A9C4C2C49FEA100C1C395 /* Church.swift */; };
+		69223DF32CDA5DF1003C2A30 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69223DF22CDA5DF1003C2A30 /* Helper.swift */; };
+		69223DF52CDA6B28003C2A30 /* MockMissionaryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 69223DF42CDA6B28003C2A30 /* MockMissionaryResponse.json */; };
+		69223DF72CDA6EEA003C2A30 /* MissionaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69223DF62CDA6EEA003C2A30 /* MissionaryService.swift */; };
+		69223DF92CDA70D7003C2A30 /* MissionaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69223DF82CDA70D7003C2A30 /* MissionaryViewModel.swift */; };
+		6937C7002CAEBC0A007D99EE /* FeaturedMinistryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937C6FF2CAEBC0A007D99EE /* FeaturedMinistryCardView.swift */; };
+		6939D07E2CA39C7700519392 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939D07D2CA39C7700519392 /* AuthViewModel.swift */; };
+		6939D0812CA3A39400519392 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6939D07F2CA3A39400519392 /* amplifyconfiguration.json */; };
+		6939D0822CA3A39400519392 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 6939D0802CA3A39400519392 /* awsconfiguration.json */; };
+		695D1D6D2CD36BC30015827C /* ChurchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695D1D6C2CD36BC30015827C /* ChurchDetailView.swift */; };
+		695E38F82BBCF67F0053979E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E38F72BBCF67F0053979E /* OnboardingView.swift */; };
+		695E38FF2BBD324F0053979E /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E38FE2BBD324F0053979E /* OnboardingPage.swift */; };
 		6961A0082BBBA5F90012B441 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6961A0072BBBA5F90012B441 /* LandingViewModel.swift */; };
-		6961A00A2BBC46060012B441 /* FirstOnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6961A0092BBC46060012B441 /* FirstOnboardingScreenView.swift */; };
 		6999BD292BBA472A00082470 /* ConnectedInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999BD282BBA472A00082470 /* ConnectedInApp.swift */; };
 		6999BD2B2BBA472A00082470 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999BD2A2BBA472A00082470 /* ContentView.swift */; };
 		6999BD2D2BBA472B00082470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6999BD2C2BBA472B00082470 /* Assets.xcassets */; };
@@ -21,8 +43,57 @@
 		6999BD592BBA4FAD00082470 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999BD582BBA4FAD00082470 /* User.swift */; };
 		6999BD5B2BBA5A3D00082470 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999BD5A2BBA5A3D00082470 /* LandingView.swift */; };
 		6999BD5F2BBAF9EF00082470 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999BD5E2BBAF9EF00082470 /* ColorExtensions.swift */; };
-		6F662837CD543809F05F2CA0 /* Pods_ConnectedIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2248C0366CA3395324D99A /* Pods_ConnectedIn.framework */; };
-		9E04AA6E0763205E1A199848 /* Pods_ConnectedInTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46DA3D872411574A11A17F3 /* Pods_ConnectedInTests.framework */; };
+		699E490E2CEDC9DE003129AB /* ContributeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E490D2CEDC9DE003129AB /* ContributeCardView.swift */; };
+		699E49102CEDC9EE003129AB /* RoundUpGivingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E490F2CEDC9EE003129AB /* RoundUpGivingView.swift */; };
+		699E49122CEDCA31003129AB /* DirectGivingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E49112CEDCA31003129AB /* DirectGivingView.swift */; };
+		699E49142CEDCFE0003129AB /* Recipient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E49132CEDCFE0003129AB /* Recipient.swift */; };
+		699E49162CEDD00D003129AB /* RoundUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E49152CEDD00D003129AB /* RoundUpViewModel.swift */; };
+		699E49182CEDD02F003129AB /* DirectGivingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E49172CEDD02F003129AB /* DirectGivingViewModel.swift */; };
+		699E491B2CEDE22D003129AB /* RoundUpRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E491A2CEDE22D003129AB /* RoundUpRowView.swift */; };
+		699E491D2CEDE2B2003129AB /* DonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E491C2CEDE2B2003129AB /* DonationView.swift */; };
+		699E491F2CEDE2CC003129AB /* ChurchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E491E2CEDE2CC003129AB /* ChurchRowView.swift */; };
+		699E49212CEDE2F2003129AB /* MissionaryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E49202CEDE2F2003129AB /* MissionaryRowView.swift */; };
+		699E49232CEDE303003129AB /* MinistryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E49222CEDE303003129AB /* MinistryRowView.swift */; };
+		699E49252CEDE827003129AB /* DonationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E49242CEDE827003129AB /* DonationViewModel.swift */; };
+		699E49272CEDFAE3003129AB /* RoundUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E49262CEDFAE3003129AB /* RoundUp.swift */; };
+		699E49292CEF11F1003129AB /* QuickActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E49282CEF11F0003129AB /* QuickActionButton.swift */; };
+		69AC67A02CF17A3400AC0BB4 /* TransportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC679F2CF17A3400AC0BB4 /* TransportButton.swift */; };
+		69C8E6B32BCCD9FC00578F9E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8E6B22BCCD9FC00578F9E /* LoginView.swift */; };
+		69C8E6BA2BD1613800578F9E /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8E6B92BD1613800578F9E /* FloatingTextField.swift */; };
+		69C8E6C02BD1F56C00578F9E /* DashboardUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8E6BF2BD1F56C00578F9E /* DashboardUserView.swift */; };
+		69C8E6C72BD1F5E000578F9E /* UserTabStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8E6C62BD1F5E000578F9E /* UserTabStore.swift */; };
+		69C8E6CA2BD3670C00578F9E /* LineDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8E6C92BD3670C00578F9E /* LineDivider.swift */; };
+		69CC65012CD900EF0020D75E /* ChurchesGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC65002CD900EF0020D75E /* ChurchesGroupView.swift */; };
+		69CC65032CD905E80020D75E /* ChurchesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC65022CD905E70020D75E /* ChurchesListView.swift */; };
+		69CC65052CD908DC0020D75E /* CustomCornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC65042CD908DC0020D75E /* CustomCornerShape.swift */; };
+		69D6DE052CDB88A20053E1F3 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D6DE042CDB88A20053E1F3 /* HomeHeaderView.swift */; };
+		69D6DE072CDB959C0053E1F3 /* MockMinistryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 69D6DE062CDB959C0053E1F3 /* MockMinistryResponse.json */; };
+		69D6DE092CDB97300053E1F3 /* MinistryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D6DE082CDB97300053E1F3 /* MinistryService.swift */; };
+		69D6DE0B2CDB98020053E1F3 /* MinistryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D6DE0A2CDB98020053E1F3 /* MinistryViewModel.swift */; };
+		69DF8AA02CDD14F3005D8FB4 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DF8A9F2CDD14F3005D8FB4 /* ConnectView.swift */; };
+		69EED6BB2C5DD2A000FA9676 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EED6BA2C5DD2A000FA9676 /* LocationsViewModel.swift */; };
+		69EED6BD2C5DD2F900FA9676 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EED6BC2C5DD2F900FA9676 /* Location.swift */; };
+		69EED6BF2C5DD65A00FA9676 /* LocationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EED6BE2C5DD65A00FA9676 /* LocationsService.swift */; };
+		69EED6C12C5DD72100FA9676 /* ChurchesLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EED6C02C5DD72100FA9676 /* ChurchesLocationView.swift */; };
+		69EED6C42C5DD84A00FA9676 /* ChurchesLocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EED6C32C5DD84A00FA9676 /* ChurchesLocationListView.swift */; };
+		69EED6C62C5DD88900FA9676 /* ChurchesLocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EED6C52C5DD88800FA9676 /* ChurchesLocationPreviewView.swift */; };
+		69EED6C82C5DD8B100FA9676 /* ChurchesMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EED6C72C5DD8B100FA9676 /* ChurchesMapAnnotationView.swift */; };
+		69EED6CA2C5DD8CB00FA9676 /* ChurchesLocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EED6C92C5DD8CB00FA9676 /* ChurchesLocationDetailView.swift */; };
+		69FB93A02CAAFCD200F02190 /* Contribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB939F2CAAFCD100F02190 /* Contribution.swift */; };
+		69FB93A32CAAFE0000F02190 /* ContributionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93A22CAAFE0000F02190 /* ContributionService.swift */; };
+		69FB93A62CAB050300F02190 /* ContributionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93A52CAB050300F02190 /* ContributionViewModel.swift */; };
+		69FB93A92CABEFF100F02190 /* ContributionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93A82CABEFF100F02190 /* ContributionView.swift */; };
+		69FB93AC2CAC799300F02190 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93AB2CAC799300F02190 /* BlurView.swift */; };
+		69FB93B42CAE6E0500F02190 /* Missionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93B32CAE6E0500F02190 /* Missionary.swift */; };
+		69FB93B62CAE6E2400F02190 /* Ministry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93B52CAE6E2400F02190 /* Ministry.swift */; };
+		69FB93B92CAE6E6C00F02190 /* FeaturedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93B82CAE6E6C00F02190 /* FeaturedViewModel.swift */; };
+		69FB93BE2CAE762900F02190 /* FeaturedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93BD2CAE762900F02190 /* FeaturedCardView.swift */; };
+		69FB93C02CAE769300F02190 /* FeaturedChurchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93BF2CAE769300F02190 /* FeaturedChurchCardView.swift */; };
+		69FB93C22CAE78C300F02190 /* FeaturedMissionaryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FB93C12CAE78C300F02190 /* FeaturedMissionaryCardView.swift */; };
+		8699F1FFF78BFA813A6ECCBA /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D0691ECD5AF3212D87ED8954 /* amplifyconfiguration.json */; };
+		AEC5C3EB15CA4A292458D462 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D3696F5EA58517CE4F4C83B /* awsconfiguration.json */; };
+		B1DA1F0D8834B09689FECC5D /* Pods_ConnectedIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF11EFF32E2ACD70BA19A3E5 /* Pods_ConnectedIn.framework */; };
+		D3A294A4B8B634855B0AF86A /* Pods_ConnectedInTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D62CA9BBDF60E0CF487CCBF /* Pods_ConnectedInTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +114,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		098AFD4AE77929C1CF1CD7A4 /* Pods-ConnectedIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn.debug.xcconfig"; path = "Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn.debug.xcconfig"; sourceTree = "<group>"; };
-		2C4FF6AB174820A06AEF2E1C /* Pods_ConnectedIn_ConnectedInUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectedIn_ConnectedInUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C2248C0366CA3395324D99A /* Pods_ConnectedIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectedIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		59E25C5A4FD9E0A6E91B2AE2 /* Pods-ConnectedIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn.release.xcconfig"; path = "Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn.release.xcconfig"; sourceTree = "<group>"; };
+		01B5C844525CB23A813BC8F4 /* Pods-ConnectedIn.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn.release-dev.xcconfig"; path = "Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn.release-dev.xcconfig"; sourceTree = "<group>"; };
+		06CBEB3040A80D3DD36AD7EA /* Pods-ConnectedInTests.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedInTests.release-dev.xcconfig"; path = "Target Support Files/Pods-ConnectedInTests/Pods-ConnectedInTests.release-dev.xcconfig"; sourceTree = "<group>"; };
+		1C38A464358F90BE25D64B09 /* Pods-ConnectedIn.release-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn.release-qa.xcconfig"; path = "Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn.release-qa.xcconfig"; sourceTree = "<group>"; };
+		1CF89ACAEDE165A110EA8E79 /* Pods-ConnectedIn-ConnectedInUITests.release-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn-ConnectedInUITests.release-qa.xcconfig"; path = "Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests.release-qa.xcconfig"; sourceTree = "<group>"; };
+		2EBFB361CD57E957DF2BEC71 /* Pods-ConnectedIn.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn.release-prod.xcconfig"; path = "Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn.release-prod.xcconfig"; sourceTree = "<group>"; };
+		3D76688B802BCA79B0990DC2 /* Pods-ConnectedInTests.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedInTests.release-prod.xcconfig"; path = "Target Support Files/Pods-ConnectedInTests/Pods-ConnectedInTests.release-prod.xcconfig"; sourceTree = "<group>"; };
+		4B43F81C0E34DCEFFAFE393C /* Pods-ConnectedInTests.release-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedInTests.release-qa.xcconfig"; path = "Target Support Files/Pods-ConnectedInTests/Pods-ConnectedInTests.release-qa.xcconfig"; sourceTree = "<group>"; };
+		4D3696F5EA58517CE4F4C83B /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		5D73E8C3E092056F2E593AB1 /* Pods-ConnectedIn.debug-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn.debug-qa.xcconfig"; path = "Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn.debug-qa.xcconfig"; sourceTree = "<group>"; };
+		6360F8C015C133EC77783BF2 /* Pods-ConnectedIn-ConnectedInUITests.debug-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn-ConnectedInUITests.debug-qa.xcconfig"; path = "Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests.debug-qa.xcconfig"; sourceTree = "<group>"; };
+		639F2ED32A2F901CC44BBF01 /* Pods-ConnectedIn-ConnectedInUITests.debug-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn-ConnectedInUITests.debug-prod.xcconfig"; path = "Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests.debug-prod.xcconfig"; sourceTree = "<group>"; };
+		6901AEB12BE5266300EDA966 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6901AEB32BE526B800EDA966 /* UserDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDashboardViewModel.swift; sourceTree = "<group>"; };
+		6901AEC22C1707AD00EDA966 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		6901AEC72C1B460E00EDA966 /* ChurchCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchCardView.swift; sourceTree = "<group>"; };
+		6901AEC92C1BF4D000EDA966 /* ChurchesAssociationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchesAssociationView.swift; sourceTree = "<group>"; };
+		691393362CC2286A006111FC /* ChurchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchService.swift; sourceTree = "<group>"; };
+		6913933A2CC23CEB006111FC /* ChurchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchViewModel.swift; sourceTree = "<group>"; };
+		6913933D2CC240AA006111FC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6913D96E2C38467E005EC42B /* Amplify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Amplify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6913D9762C3847E7005EC42B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		691A9C4C2C49FEA100C1C395 /* Church.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Church.swift; sourceTree = "<group>"; };
+		69223DF22CDA5DF1003C2A30 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		69223DF42CDA6B28003C2A30 /* MockMissionaryResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockMissionaryResponse.json; sourceTree = "<group>"; };
+		69223DF62CDA6EEA003C2A30 /* MissionaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionaryService.swift; sourceTree = "<group>"; };
+		69223DF82CDA70D7003C2A30 /* MissionaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionaryViewModel.swift; sourceTree = "<group>"; };
+		6937C6FF2CAEBC0A007D99EE /* FeaturedMinistryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedMinistryCardView.swift; sourceTree = "<group>"; };
+		6939D07D2CA39C7700519392 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		6939D07F2CA3A39400519392 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		6939D0802CA3A39400519392 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		695D1D6C2CD36BC30015827C /* ChurchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchDetailView.swift; sourceTree = "<group>"; };
+		695E38F72BBCF67F0053979E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		695E38FE2BBD324F0053979E /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
 		6961A0072BBBA5F90012B441 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
-		6961A0092BBC46060012B441 /* FirstOnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingScreenView.swift; sourceTree = "<group>"; };
+		6989C35C2CB7C1350033B308 /* MockChurchResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockChurchResponse.json; sourceTree = "<group>"; };
 		6999BD252BBA472A00082470 /* ConnectedIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectedIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6999BD282BBA472A00082470 /* ConnectedInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedInApp.swift; sourceTree = "<group>"; };
 		6999BD2A2BBA472A00082470 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,11 +163,65 @@
 		6999BD582BBA4FAD00082470 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		6999BD5A2BBA5A3D00082470 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		6999BD5E2BBAF9EF00082470 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
-		91F292ED5D11C9BB57480259 /* Pods-ConnectedInTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedInTests.release.xcconfig"; path = "Target Support Files/Pods-ConnectedInTests/Pods-ConnectedInTests.release.xcconfig"; sourceTree = "<group>"; };
-		9DF20702483FA5D5FAAB3E7D /* Pods-ConnectedIn-ConnectedInUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn-ConnectedInUITests.release.xcconfig"; path = "Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D1E067BAE9E683B1D86644FC /* Pods-ConnectedInTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedInTests.debug.xcconfig"; path = "Target Support Files/Pods-ConnectedInTests/Pods-ConnectedInTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E46DA3D872411574A11A17F3 /* Pods_ConnectedInTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectedInTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0D3FE497447C44073EE2E69 /* Pods-ConnectedIn-ConnectedInUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn-ConnectedInUITests.debug.xcconfig"; path = "Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		699E490D2CEDC9DE003129AB /* ContributeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributeCardView.swift; sourceTree = "<group>"; };
+		699E490F2CEDC9EE003129AB /* RoundUpGivingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpGivingView.swift; sourceTree = "<group>"; };
+		699E49112CEDCA31003129AB /* DirectGivingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectGivingView.swift; sourceTree = "<group>"; };
+		699E49132CEDCFE0003129AB /* Recipient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipient.swift; sourceTree = "<group>"; };
+		699E49152CEDD00D003129AB /* RoundUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpViewModel.swift; sourceTree = "<group>"; };
+		699E49172CEDD02F003129AB /* DirectGivingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectGivingViewModel.swift; sourceTree = "<group>"; };
+		699E491A2CEDE22D003129AB /* RoundUpRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUpRowView.swift; sourceTree = "<group>"; };
+		699E491C2CEDE2B2003129AB /* DonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationView.swift; sourceTree = "<group>"; };
+		699E491E2CEDE2CC003129AB /* ChurchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchRowView.swift; sourceTree = "<group>"; };
+		699E49202CEDE2F2003129AB /* MissionaryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionaryRowView.swift; sourceTree = "<group>"; };
+		699E49222CEDE303003129AB /* MinistryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistryRowView.swift; sourceTree = "<group>"; };
+		699E49242CEDE827003129AB /* DonationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewModel.swift; sourceTree = "<group>"; };
+		699E49262CEDFAE3003129AB /* RoundUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUp.swift; sourceTree = "<group>"; };
+		699E49282CEF11F0003129AB /* QuickActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionButton.swift; sourceTree = "<group>"; };
+		69AC679F2CF17A3400AC0BB4 /* TransportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportButton.swift; sourceTree = "<group>"; };
+		69C8E6B22BCCD9FC00578F9E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		69C8E6B92BD1613800578F9E /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
+		69C8E6BF2BD1F56C00578F9E /* DashboardUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUserView.swift; sourceTree = "<group>"; };
+		69C8E6C62BD1F5E000578F9E /* UserTabStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabStore.swift; sourceTree = "<group>"; };
+		69C8E6C92BD3670C00578F9E /* LineDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineDivider.swift; sourceTree = "<group>"; };
+		69CC65002CD900EF0020D75E /* ChurchesGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchesGroupView.swift; sourceTree = "<group>"; };
+		69CC65022CD905E70020D75E /* ChurchesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchesListView.swift; sourceTree = "<group>"; };
+		69CC65042CD908DC0020D75E /* CustomCornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCornerShape.swift; sourceTree = "<group>"; };
+		69D6DE042CDB88A20053E1F3 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		69D6DE062CDB959C0053E1F3 /* MockMinistryResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockMinistryResponse.json; sourceTree = "<group>"; };
+		69D6DE082CDB97300053E1F3 /* MinistryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistryService.swift; sourceTree = "<group>"; };
+		69D6DE0A2CDB98020053E1F3 /* MinistryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinistryViewModel.swift; sourceTree = "<group>"; };
+		69DF8A9F2CDD14F3005D8FB4 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		69EED6BA2C5DD2A000FA9676 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		69EED6BC2C5DD2F900FA9676 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		69EED6BE2C5DD65A00FA9676 /* LocationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsService.swift; sourceTree = "<group>"; };
+		69EED6C02C5DD72100FA9676 /* ChurchesLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchesLocationView.swift; sourceTree = "<group>"; };
+		69EED6C32C5DD84A00FA9676 /* ChurchesLocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchesLocationListView.swift; sourceTree = "<group>"; };
+		69EED6C52C5DD88800FA9676 /* ChurchesLocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchesLocationPreviewView.swift; sourceTree = "<group>"; };
+		69EED6C72C5DD8B100FA9676 /* ChurchesMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchesMapAnnotationView.swift; sourceTree = "<group>"; };
+		69EED6C92C5DD8CB00FA9676 /* ChurchesLocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchesLocationDetailView.swift; sourceTree = "<group>"; };
+		69FB939F2CAAFCD100F02190 /* Contribution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contribution.swift; sourceTree = "<group>"; };
+		69FB93A22CAAFE0000F02190 /* ContributionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionService.swift; sourceTree = "<group>"; };
+		69FB93A52CAB050300F02190 /* ContributionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionViewModel.swift; sourceTree = "<group>"; };
+		69FB93A82CABEFF100F02190 /* ContributionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionView.swift; sourceTree = "<group>"; };
+		69FB93AB2CAC799300F02190 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		69FB93B32CAE6E0500F02190 /* Missionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missionary.swift; sourceTree = "<group>"; };
+		69FB93B52CAE6E2400F02190 /* Ministry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ministry.swift; sourceTree = "<group>"; };
+		69FB93B82CAE6E6C00F02190 /* FeaturedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewModel.swift; sourceTree = "<group>"; };
+		69FB93BD2CAE762900F02190 /* FeaturedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCardView.swift; sourceTree = "<group>"; };
+		69FB93BF2CAE769300F02190 /* FeaturedChurchCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedChurchCardView.swift; sourceTree = "<group>"; };
+		69FB93C12CAE78C300F02190 /* FeaturedMissionaryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedMissionaryCardView.swift; sourceTree = "<group>"; };
+		703C5732524B212357A7CA86 /* Pods-ConnectedIn.debug-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn.debug-prod.xcconfig"; path = "Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn.debug-prod.xcconfig"; sourceTree = "<group>"; };
+		7A01268B6898406F2EE4D6BA /* Pods_ConnectedIn_ConnectedInUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectedIn_ConnectedInUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82D0BB28A932A818CF0745B4 /* Pods-ConnectedIn-ConnectedInUITests.release-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn-ConnectedInUITests.release-dev.xcconfig"; path = "Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests.release-dev.xcconfig"; sourceTree = "<group>"; };
+		9D62CA9BBDF60E0CF487CCBF /* Pods_ConnectedInTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectedInTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E9162A2849390D1FCF97771 /* Pods-ConnectedIn.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn.debug-dev.xcconfig"; path = "Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		B97998A7512446A26322C4A8 /* Pods-ConnectedIn-ConnectedInUITests.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn-ConnectedInUITests.debug-dev.xcconfig"; path = "Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests.debug-dev.xcconfig"; sourceTree = "<group>"; };
+		D0691ECD5AF3212D87ED8954 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		DF11EFF32E2ACD70BA19A3E5 /* Pods_ConnectedIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectedIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E238CE4E74ADB0E1D03923E7 /* Pods-ConnectedInTests.debug-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedInTests.debug-qa.xcconfig"; path = "Target Support Files/Pods-ConnectedInTests/Pods-ConnectedInTests.debug-qa.xcconfig"; sourceTree = "<group>"; };
+		F385307E269FD5500FE96A35 /* Pods-ConnectedIn-ConnectedInUITests.release-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedIn-ConnectedInUITests.release-prod.xcconfig"; path = "Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests.release-prod.xcconfig"; sourceTree = "<group>"; };
+		F8B9D50B7539CF9C5837D9C7 /* Pods-ConnectedInTests.debug-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedInTests.debug-prod.xcconfig"; path = "Target Support Files/Pods-ConnectedInTests/Pods-ConnectedInTests.debug-prod.xcconfig"; sourceTree = "<group>"; };
+		F9115D62DA4A04F3BC398AD1 /* Pods-ConnectedInTests.debug-dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectedInTests.debug-dev.xcconfig"; path = "Target Support Files/Pods-ConnectedInTests/Pods-ConnectedInTests.debug-dev.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +229,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F662837CD543809F05F2CA0 /* Pods_ConnectedIn.framework in Frameworks */,
+				6913D9732C3847B5005EC42B /* Amplify in Frameworks */,
+				6913D9752C3847C5005EC42B /* AWSCognitoAuthPlugin in Frameworks */,
+				B1DA1F0D8834B09689FECC5D /* Pods_ConnectedIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +239,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E04AA6E0763205E1A199848 /* Pods_ConnectedInTests.framework in Frameworks */,
+				D3A294A4B8B634855B0AF86A /* Pods_ConnectedInTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,13 +247,147 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C7CE53D922AA464EA3B3328 /* Pods_ConnectedIn_ConnectedInUITests.framework in Frameworks */,
+				3FB63D4EA482AAD9793E966E /* Pods_ConnectedIn_ConnectedInUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		496CEBD8AAC7A3E9160364CE /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				4D3696F5EA58517CE4F4C83B /* awsconfiguration.json */,
+				D0691ECD5AF3212D87ED8954 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+		6901AEB52BE527F900EDA966 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		6901AEBC2BFC31C900EDA966 /* Churches */ = {
+			isa = PBXGroup;
+			children = (
+				6901AEC62C1B45F700EDA966 /* Cards */,
+				6901AEC92C1BF4D000EDA966 /* ChurchesAssociationView.swift */,
+				695D1D6C2CD36BC30015827C /* ChurchDetailView.swift */,
+				69CC65002CD900EF0020D75E /* ChurchesGroupView.swift */,
+				69CC65022CD905E70020D75E /* ChurchesListView.swift */,
+			);
+			path = Churches;
+			sourceTree = "<group>";
+		};
+		6901AEBD2BFC31D400EDA966 /* Missionaries */ = {
+			isa = PBXGroup;
+			children = (
+				69FB939D2CAAF5F100F02190 /* Cards */,
+			);
+			path = Missionaries;
+			sourceTree = "<group>";
+		};
+		6901AEBE2BFC31F900EDA966 /* Communities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Communities;
+			sourceTree = "<group>";
+		};
+		6901AEC12C17079600EDA966 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				6901AEC22C1707AD00EDA966 /* UserDefaultsManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		6901AEC62C1B45F700EDA966 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				6901AEC72C1B460E00EDA966 /* ChurchCardView.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		6913933C2CC240A0006111FC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6913933D2CC240AA006111FC /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		691A9C452C48AAE300C1C395 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				691A9C4B2C4921E300C1C395 /* Cards */,
+				6901AEB12BE5266300EDA966 /* HomeView.swift */,
+				69D6DE042CDB88A20053E1F3 /* HomeHeaderView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		691A9C462C48AAF100C1C395 /* Connect */ = {
+			isa = PBXGroup;
+			children = (
+				69AC679E2CF17A2400AC0BB4 /* SupportingViews */,
+				69EED6C22C5DD82C00FA9676 /* Locations */,
+				691A9C482C48ABEA00C1C395 /* Cards */,
+				69DF8A9F2CDD14F3005D8FB4 /* ConnectView.swift */,
+			);
+			path = Connect;
+			sourceTree = "<group>";
+		};
+		691A9C482C48ABEA00C1C395 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		691A9C4B2C4921E300C1C395 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				69FB93BC2CAE759800F02190 /* Featured */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		6945A9882CAF6F1800656F6F /* Contribute */ = {
+			isa = PBXGroup;
+			children = (
+				699E49192CEDE21B003129AB /* SupportingViews */,
+				699E490A2CEDC661003129AB /* Cards */,
+				69FB93A82CABEFF100F02190 /* ContributionView.swift */,
+				699E490F2CEDC9EE003129AB /* RoundUpGivingView.swift */,
+				699E49112CEDCA31003129AB /* DirectGivingView.swift */,
+			);
+			path = Contribute;
+			sourceTree = "<group>";
+		};
+		695E38FB2BBCF8F20053979E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				695E38F72BBCF67F0053979E /* OnboardingView.swift */,
+				695E38FE2BBD324F0053979E /* OnboardingPage.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6989C35A2CB656A90033B308 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6989C35C2CB7C1350033B308 /* MockChurchResponse.json */,
+				69223DF42CDA6B28003C2A30 /* MockMissionaryResponse.json */,
+				69D6DE062CDB959C0053E1F3 /* MockMinistryResponse.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		6999BD1C2BBA472A00082470 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +397,7 @@
 				6999BD262BBA472A00082470 /* Products */,
 				9120A68220C469C859A2C568 /* Pods */,
 				CC28DFBBC39C77F6938F3DB7 /* Frameworks */,
+				496CEBD8AAC7A3E9160364CE /* AmplifyConfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,11 +414,14 @@
 		6999BD272BBA472A00082470 /* ConnectedIn */ = {
 			isa = PBXGroup;
 			children = (
+				6939D07F2CA3A39400519392 /* amplifyconfiguration.json */,
+				6939D0802CA3A39400519392 /* awsconfiguration.json */,
+				6913D9762C3847E7005EC42B /* Info.plist */,
 				6999BD5C2BBAF9CE00082470 /* Utilities */,
 				6999BD552BBA4EC500082470 /* Networking */,
+				6999BD522BBA4E4000082470 /* Models */,
 				6999BD542BBA4E5000082470 /* ViewModels */,
 				6999BD532BBA4E4800082470 /* Views */,
-				6999BD522BBA4E4000082470 /* Models */,
 				6999BD282BBA472A00082470 /* ConnectedInApp.swift */,
 				6999BD2A2BBA472A00082470 /* ContentView.swift */,
 				6999BD2C2BBA472B00082470 /* Assets.xcassets */,
@@ -164,7 +458,13 @@
 		6999BD522BBA4E4000082470 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				69FB939E2CAAFCBA00F02190 /* Contribute */,
 				6999BD582BBA4FAD00082470 /* User.swift */,
+				691A9C4C2C49FEA100C1C395 /* Church.swift */,
+				69FB93B32CAE6E0500F02190 /* Missionary.swift */,
+				69FB93B52CAE6E2400F02190 /* Ministry.swift */,
+				69EED6BC2C5DD2F900FA9676 /* Location.swift */,
+				699E49262CEDFAE3003129AB /* RoundUp.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,8 +472,13 @@
 		6999BD532BBA4E4800082470 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69FB93AA2CAC797E00F02190 /* Helpers */,
+				69C8E6C22BD1F59400578F9E /* Admin */,
+				69C8E6C12BD1F58E00578F9E /* User */,
+				69C8E6B42BD15D7400578F9E /* Login */,
+				695E38FB2BBCF8F20053979E /* Onboarding */,
 				6999BD5A2BBA5A3D00082470 /* LandingView.swift */,
-				6961A0092BBC46060012B441 /* FirstOnboardingScreenView.swift */,
+				69C8E6B72BD1611500578F9E /* Others */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,7 +486,9 @@
 		6999BD542BBA4E5000082470 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				69C8E6BE2BD1F50C00578F9E /* Store */,
 				6961A0072BBBA5F90012B441 /* LandingViewModel.swift */,
+				6939D07D2CA39C7700519392 /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -189,7 +496,9 @@
 		6999BD552BBA4EC500082470 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				69FB93A12CAAFDDC00F02190 /* Services */,
 				6999BD562BBA4ED500082470 /* SessionManager.swift */,
+				69EED6BE2C5DD65A00FA9676 /* LocationsService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -197,6 +506,8 @@
 		6999BD5C2BBAF9CE00082470 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6913933C2CC240A0006111FC /* Helpers */,
+				6901AEC12C17079600EDA966 /* Local */,
 				6999BD5D2BBAF9DB00082470 /* Extensions */,
 			);
 			path = Utilities;
@@ -210,15 +521,254 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		699E490A2CEDC661003129AB /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				699E490D2CEDC9DE003129AB /* ContributeCardView.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		699E49192CEDE21B003129AB /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				699E491A2CEDE22D003129AB /* RoundUpRowView.swift */,
+				699E491C2CEDE2B2003129AB /* DonationView.swift */,
+				699E491E2CEDE2CC003129AB /* ChurchRowView.swift */,
+				699E49202CEDE2F2003129AB /* MissionaryRowView.swift */,
+				699E49222CEDE303003129AB /* MinistryRowView.swift */,
+				699E49282CEF11F0003129AB /* QuickActionButton.swift */,
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		69AC679E2CF17A2400AC0BB4 /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				69AC679F2CF17A3400AC0BB4 /* TransportButton.swift */,
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		69C8E6B42BD15D7400578F9E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				69C8E6B22BCCD9FC00578F9E /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		69C8E6B72BD1611500578F9E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				6901AEB52BE527F900EDA966 /* Cards */,
+				69C8E6C82BD366FE00578F9E /* Views */,
+				69C8E6B82BD1612300578F9E /* TextFields */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		69C8E6B82BD1612300578F9E /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				69C8E6B92BD1613800578F9E /* FloatingTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		69C8E6BB2BD178DB00578F9E /* TabPages */ = {
+			isa = PBXGroup;
+			children = (
+				6945A9882CAF6F1800656F6F /* Contribute */,
+				691A9C462C48AAF100C1C395 /* Connect */,
+				691A9C452C48AAE300C1C395 /* Home */,
+				69C8E6BF2BD1F56C00578F9E /* DashboardUserView.swift */,
+			);
+			path = TabPages;
+			sourceTree = "<group>";
+		};
+		69C8E6BE2BD1F50C00578F9E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				69C8E6C52BD1F5C800578F9E /* Admin */,
+				69C8E6C42BD1F5C300578F9E /* User */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		69C8E6C12BD1F58E00578F9E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				69FB93A72CABEFDD00F02190 /* Contribute */,
+				6901AEBE2BFC31F900EDA966 /* Communities */,
+				6901AEBD2BFC31D400EDA966 /* Missionaries */,
+				6901AEBC2BFC31C900EDA966 /* Churches */,
+				69C8E6BB2BD178DB00578F9E /* TabPages */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		69C8E6C22BD1F59400578F9E /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				69C8E6C32BD1F5A200578F9E /* Dashboard */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		69C8E6C32BD1F5A200578F9E /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		69C8E6C42BD1F5C300578F9E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				69FB93B72CAE6E5E00F02190 /* Home */,
+				69FB93A42CAB04ED00F02190 /* Contribute */,
+				69EED6B92C5DD27500FA9676 /* Connect */,
+				69C8E6C62BD1F5E000578F9E /* UserTabStore.swift */,
+				6901AEB32BE526B800EDA966 /* UserDashboardViewModel.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		69C8E6C52BD1F5C800578F9E /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		69C8E6C82BD366FE00578F9E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69C8E6C92BD3670C00578F9E /* LineDivider.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69EED6B92C5DD27500FA9676 /* Connect */ = {
+			isa = PBXGroup;
+			children = (
+				69EED6BA2C5DD2A000FA9676 /* LocationsViewModel.swift */,
+			);
+			path = Connect;
+			sourceTree = "<group>";
+		};
+		69EED6C22C5DD82C00FA9676 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				69EED6C02C5DD72100FA9676 /* ChurchesLocationView.swift */,
+				69EED6C32C5DD84A00FA9676 /* ChurchesLocationListView.swift */,
+				69EED6C52C5DD88800FA9676 /* ChurchesLocationPreviewView.swift */,
+				69EED6C72C5DD8B100FA9676 /* ChurchesMapAnnotationView.swift */,
+				69EED6C92C5DD8CB00FA9676 /* ChurchesLocationDetailView.swift */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		69FB939D2CAAF5F100F02190 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		69FB939E2CAAFCBA00F02190 /* Contribute */ = {
+			isa = PBXGroup;
+			children = (
+				69FB939F2CAAFCD100F02190 /* Contribution.swift */,
+				699E49132CEDCFE0003129AB /* Recipient.swift */,
+			);
+			path = Contribute;
+			sourceTree = "<group>";
+		};
+		69FB93A12CAAFDDC00F02190 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6989C35A2CB656A90033B308 /* Mocks */,
+				69FB93A22CAAFE0000F02190 /* ContributionService.swift */,
+				691393362CC2286A006111FC /* ChurchService.swift */,
+				69223DF62CDA6EEA003C2A30 /* MissionaryService.swift */,
+				69D6DE082CDB97300053E1F3 /* MinistryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		69FB93A42CAB04ED00F02190 /* Contribute */ = {
+			isa = PBXGroup;
+			children = (
+				69FB93A52CAB050300F02190 /* ContributionViewModel.swift */,
+				699E49152CEDD00D003129AB /* RoundUpViewModel.swift */,
+				699E49172CEDD02F003129AB /* DirectGivingViewModel.swift */,
+				699E49242CEDE827003129AB /* DonationViewModel.swift */,
+			);
+			path = Contribute;
+			sourceTree = "<group>";
+		};
+		69FB93A72CABEFDD00F02190 /* Contribute */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contribute;
+			sourceTree = "<group>";
+		};
+		69FB93AA2CAC797E00F02190 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				69FB93AB2CAC799300F02190 /* BlurView.swift */,
+				69CC65042CD908DC0020D75E /* CustomCornerShape.swift */,
+				69223DF22CDA5DF1003C2A30 /* Helper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		69FB93B72CAE6E5E00F02190 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6913933A2CC23CEB006111FC /* ChurchViewModel.swift */,
+				69223DF82CDA70D7003C2A30 /* MissionaryViewModel.swift */,
+				69FB93B82CAE6E6C00F02190 /* FeaturedViewModel.swift */,
+				69D6DE0A2CDB98020053E1F3 /* MinistryViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		69FB93BC2CAE759800F02190 /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+				69FB93BD2CAE762900F02190 /* FeaturedCardView.swift */,
+				69FB93BF2CAE769300F02190 /* FeaturedChurchCardView.swift */,
+				69FB93C12CAE78C300F02190 /* FeaturedMissionaryCardView.swift */,
+				6937C6FF2CAEBC0A007D99EE /* FeaturedMinistryCardView.swift */,
+			);
+			path = Featured;
+			sourceTree = "<group>";
+		};
 		9120A68220C469C859A2C568 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				098AFD4AE77929C1CF1CD7A4 /* Pods-ConnectedIn.debug.xcconfig */,
-				59E25C5A4FD9E0A6E91B2AE2 /* Pods-ConnectedIn.release.xcconfig */,
-				F0D3FE497447C44073EE2E69 /* Pods-ConnectedIn-ConnectedInUITests.debug.xcconfig */,
-				9DF20702483FA5D5FAAB3E7D /* Pods-ConnectedIn-ConnectedInUITests.release.xcconfig */,
-				D1E067BAE9E683B1D86644FC /* Pods-ConnectedInTests.debug.xcconfig */,
-				91F292ED5D11C9BB57480259 /* Pods-ConnectedInTests.release.xcconfig */,
+				9E9162A2849390D1FCF97771 /* Pods-ConnectedIn.debug-dev.xcconfig */,
+				703C5732524B212357A7CA86 /* Pods-ConnectedIn.debug-prod.xcconfig */,
+				5D73E8C3E092056F2E593AB1 /* Pods-ConnectedIn.debug-qa.xcconfig */,
+				01B5C844525CB23A813BC8F4 /* Pods-ConnectedIn.release-dev.xcconfig */,
+				1C38A464358F90BE25D64B09 /* Pods-ConnectedIn.release-qa.xcconfig */,
+				2EBFB361CD57E957DF2BEC71 /* Pods-ConnectedIn.release-prod.xcconfig */,
+				B97998A7512446A26322C4A8 /* Pods-ConnectedIn-ConnectedInUITests.debug-dev.xcconfig */,
+				639F2ED32A2F901CC44BBF01 /* Pods-ConnectedIn-ConnectedInUITests.debug-prod.xcconfig */,
+				6360F8C015C133EC77783BF2 /* Pods-ConnectedIn-ConnectedInUITests.debug-qa.xcconfig */,
+				82D0BB28A932A818CF0745B4 /* Pods-ConnectedIn-ConnectedInUITests.release-dev.xcconfig */,
+				1CF89ACAEDE165A110EA8E79 /* Pods-ConnectedIn-ConnectedInUITests.release-qa.xcconfig */,
+				F385307E269FD5500FE96A35 /* Pods-ConnectedIn-ConnectedInUITests.release-prod.xcconfig */,
+				F9115D62DA4A04F3BC398AD1 /* Pods-ConnectedInTests.debug-dev.xcconfig */,
+				F8B9D50B7539CF9C5837D9C7 /* Pods-ConnectedInTests.debug-prod.xcconfig */,
+				E238CE4E74ADB0E1D03923E7 /* Pods-ConnectedInTests.debug-qa.xcconfig */,
+				06CBEB3040A80D3DD36AD7EA /* Pods-ConnectedInTests.release-dev.xcconfig */,
+				4B43F81C0E34DCEFFAFE393C /* Pods-ConnectedInTests.release-qa.xcconfig */,
+				3D76688B802BCA79B0990DC2 /* Pods-ConnectedInTests.release-prod.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -226,9 +776,10 @@
 		CC28DFBBC39C77F6938F3DB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3C2248C0366CA3395324D99A /* Pods_ConnectedIn.framework */,
-				2C4FF6AB174820A06AEF2E1C /* Pods_ConnectedIn_ConnectedInUITests.framework */,
-				E46DA3D872411574A11A17F3 /* Pods_ConnectedInTests.framework */,
+				6913D96E2C38467E005EC42B /* Amplify.framework */,
+				DF11EFF32E2ACD70BA19A3E5 /* Pods_ConnectedIn.framework */,
+				7A01268B6898406F2EE4D6BA /* Pods_ConnectedIn_ConnectedInUITests.framework */,
+				9D62CA9BBDF60E0CF487CCBF /* Pods_ConnectedInTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,16 +791,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6999BD492BBA472B00082470 /* Build configuration list for PBXNativeTarget "ConnectedIn" */;
 			buildPhases = (
-				B59211A2C2755D2310C7E934 /* [CP] Check Pods Manifest.lock */,
+				A3F0C6FE48C7E72E658F4DC2 /* [CP] Check Pods Manifest.lock */,
 				6999BD212BBA472A00082470 /* Sources */,
 				6999BD222BBA472A00082470 /* Frameworks */,
 				6999BD232BBA472A00082470 /* Resources */,
+				165560C083C067E42465F01B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ConnectedIn;
+			packageProductDependencies = (
+				6913D9722C3847B5005EC42B /* Amplify */,
+				6913D9742C3847C5005EC42B /* AWSCognitoAuthPlugin */,
+			);
 			productName = ConnectedIn;
 			productReference = 6999BD252BBA472A00082470 /* ConnectedIn.app */;
 			productType = "com.apple.product-type.application";
@@ -258,7 +814,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6999BD4C2BBA472B00082470 /* Build configuration list for PBXNativeTarget "ConnectedInTests" */;
 			buildPhases = (
-				A2743A11D250C10F5D60F404 /* [CP] Check Pods Manifest.lock */,
+				0CF2747B949577C5368E7CE7 /* [CP] Check Pods Manifest.lock */,
 				6999BD312BBA472B00082470 /* Sources */,
 				6999BD322BBA472B00082470 /* Frameworks */,
 				6999BD332BBA472B00082470 /* Resources */,
@@ -277,10 +833,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6999BD4F2BBA472B00082470 /* Build configuration list for PBXNativeTarget "ConnectedInUITests" */;
 			buildPhases = (
-				435A939B1BF4016DCDC9B6D7 /* [CP] Check Pods Manifest.lock */,
+				07632BE63B1135F20CC097A2 /* [CP] Check Pods Manifest.lock */,
 				6999BD3B2BBA472B00082470 /* Sources */,
 				6999BD3C2BBA472B00082470 /* Frameworks */,
 				6999BD3D2BBA472B00082470 /* Resources */,
+				4E3647D2C457231BFBD03771 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -324,6 +881,9 @@
 				Base,
 			);
 			mainGroup = 6999BD1C2BBA472A00082470;
+			packageReferences = (
+				6913D96D2C38375B005EC42B /* XCRemoteSwiftPackageReference "amplify-swift" */,
+			);
 			productRefGroup = 6999BD262BBA472A00082470 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +902,13 @@
 			files = (
 				6999BD302BBA472B00082470 /* Preview Assets.xcassets in Resources */,
 				6999BD2D2BBA472B00082470 /* Assets.xcassets in Resources */,
+				69223DF52CDA6B28003C2A30 /* MockMissionaryResponse.json in Resources */,
+				6939D0822CA3A39400519392 /* awsconfiguration.json in Resources */,
+				6939D0812CA3A39400519392 /* amplifyconfiguration.json in Resources */,
+				6913933F2CC2983D006111FC /* MockChurchResponse.json in Resources */,
+				69D6DE072CDB959C0053E1F3 /* MockMinistryResponse.json in Resources */,
+				AEC5C3EB15CA4A292458D462 /* awsconfiguration.json in Resources */,
+				8699F1FFF78BFA813A6ECCBA /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +929,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		435A939B1BF4016DCDC9B6D7 /* [CP] Check Pods Manifest.lock */ = {
+		07632BE63B1135F20CC097A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,7 +951,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A2743A11D250C10F5D60F404 /* [CP] Check Pods Manifest.lock */ = {
+		0CF2747B949577C5368E7CE7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -406,7 +973,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B59211A2C2755D2310C7E934 /* [CP] Check Pods Manifest.lock */ = {
+		165560C083C067E42465F01B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConnectedIn/Pods-ConnectedIn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E3647D2C457231BFBD03771 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConnectedIn-ConnectedInUITests/Pods-ConnectedIn-ConnectedInUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3F0C6FE48C7E72E658F4DC2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -435,14 +1036,76 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6961A00A2BBC46060012B441 /* FirstOnboardingScreenView.swift in Sources */,
+				6901AEB22BE5266300EDA966 /* HomeView.swift in Sources */,
+				69DF8AA02CDD14F3005D8FB4 /* ConnectView.swift in Sources */,
+				69C8E6C72BD1F5E000578F9E /* UserTabStore.swift in Sources */,
+				691A9C4D2C49FEA100C1C395 /* Church.swift in Sources */,
+				69EED6CA2C5DD8CB00FA9676 /* ChurchesLocationDetailView.swift in Sources */,
+				69FB93B62CAE6E2400F02190 /* Ministry.swift in Sources */,
+				69223DF32CDA5DF1003C2A30 /* Helper.swift in Sources */,
 				6999BD592BBA4FAD00082470 /* User.swift in Sources */,
+				691393372CC2286A006111FC /* ChurchService.swift in Sources */,
+				6901AEC32C1707AD00EDA966 /* UserDefaultsManager.swift in Sources */,
+				699E49162CEDD00D003129AB /* RoundUpViewModel.swift in Sources */,
+				699E49292CEF11F1003129AB /* QuickActionButton.swift in Sources */,
+				69EED6BD2C5DD2F900FA9676 /* Location.swift in Sources */,
+				6913933B2CC23CEB006111FC /* ChurchViewModel.swift in Sources */,
 				6999BD5B2BBA5A3D00082470 /* LandingView.swift in Sources */,
+				69FB93B42CAE6E0500F02190 /* Missionary.swift in Sources */,
+				699E49102CEDC9EE003129AB /* RoundUpGivingView.swift in Sources */,
+				6939D07E2CA39C7700519392 /* AuthViewModel.swift in Sources */,
+				699E49272CEDFAE3003129AB /* RoundUp.swift in Sources */,
+				695D1D6D2CD36BC30015827C /* ChurchDetailView.swift in Sources */,
+				69FB93BE2CAE762900F02190 /* FeaturedCardView.swift in Sources */,
+				699E49142CEDCFE0003129AB /* Recipient.swift in Sources */,
+				69C8E6C02BD1F56C00578F9E /* DashboardUserView.swift in Sources */,
+				69EED6BF2C5DD65A00FA9676 /* LocationsService.swift in Sources */,
+				6901AEC82C1B460E00EDA966 /* ChurchCardView.swift in Sources */,
+				69D6DE092CDB97300053E1F3 /* MinistryService.swift in Sources */,
+				69EED6BB2C5DD2A000FA9676 /* LocationsViewModel.swift in Sources */,
+				69223DF92CDA70D7003C2A30 /* MissionaryViewModel.swift in Sources */,
+				699E49232CEDE303003129AB /* MinistryRowView.swift in Sources */,
+				69FB93A92CABEFF100F02190 /* ContributionView.swift in Sources */,
+				6901AEB42BE526B800EDA966 /* UserDashboardViewModel.swift in Sources */,
+				69FB93C22CAE78C300F02190 /* FeaturedMissionaryCardView.swift in Sources */,
+				69FB93AC2CAC799300F02190 /* BlurView.swift in Sources */,
+				699E491F2CEDE2CC003129AB /* ChurchRowView.swift in Sources */,
+				69D6DE052CDB88A20053E1F3 /* HomeHeaderView.swift in Sources */,
+				699E49182CEDD02F003129AB /* DirectGivingViewModel.swift in Sources */,
+				695E38FF2BBD324F0053979E /* OnboardingPage.swift in Sources */,
+				699E491B2CEDE22D003129AB /* RoundUpRowView.swift in Sources */,
+				695E38F82BBCF67F0053979E /* OnboardingView.swift in Sources */,
+				69FB93B92CAE6E6C00F02190 /* FeaturedViewModel.swift in Sources */,
+				69D6DE0B2CDB98020053E1F3 /* MinistryViewModel.swift in Sources */,
+				69CC65052CD908DC0020D75E /* CustomCornerShape.swift in Sources */,
+				6901AECA2C1BF4D000EDA966 /* ChurchesAssociationView.swift in Sources */,
 				6999BD2B2BBA472A00082470 /* ContentView.swift in Sources */,
+				69223DF72CDA6EEA003C2A30 /* MissionaryService.swift in Sources */,
+				69CC65012CD900EF0020D75E /* ChurchesGroupView.swift in Sources */,
+				6937C7002CAEBC0A007D99EE /* FeaturedMinistryCardView.swift in Sources */,
+				69EED6C42C5DD84A00FA9676 /* ChurchesLocationListView.swift in Sources */,
+				699E49212CEDE2F2003129AB /* MissionaryRowView.swift in Sources */,
 				6999BD292BBA472A00082470 /* ConnectedInApp.swift in Sources */,
+				6913933E2CC240AA006111FC /* Constants.swift in Sources */,
+				69C8E6BA2BD1613800578F9E /* FloatingTextField.swift in Sources */,
+				69EED6C82C5DD8B100FA9676 /* ChurchesMapAnnotationView.swift in Sources */,
+				699E49252CEDE827003129AB /* DonationViewModel.swift in Sources */,
+				69C8E6CA2BD3670C00578F9E /* LineDivider.swift in Sources */,
+				699E49122CEDCA31003129AB /* DirectGivingView.swift in Sources */,
 				6999BD572BBA4ED500082470 /* SessionManager.swift in Sources */,
+				69FB93A02CAAFCD200F02190 /* Contribution.swift in Sources */,
+				69EED6C12C5DD72100FA9676 /* ChurchesLocationView.swift in Sources */,
 				6961A0082BBBA5F90012B441 /* LandingViewModel.swift in Sources */,
+				699E491D2CEDE2B2003129AB /* DonationView.swift in Sources */,
+				69AC67A02CF17A3400AC0BB4 /* TransportButton.swift in Sources */,
+				69CC65032CD905E80020D75E /* ChurchesListView.swift in Sources */,
+				69FB93A32CAAFE0000F02190 /* ContributionService.swift in Sources */,
+				69FB93A62CAB050300F02190 /* ContributionViewModel.swift in Sources */,
+				69C8E6B32BCCD9FC00578F9E /* LoginView.swift in Sources */,
+				69EED6C62C5DD88900FA9676 /* ChurchesLocationPreviewView.swift in Sources */,
 				6999BD5F2BBAF9EF00082470 /* ColorExtensions.swift in Sources */,
+				69FB93C02CAE769300F02190 /* FeaturedChurchCardView.swift in Sources */,
+				699E490E2CEDC9DE003129AB /* ContributeCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +1142,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		6999BD472BBA472B00082470 /* Debug */ = {
+		69227BD52C6EECBC00D22BC6 /* Debug-QA */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -516,7 +1179,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -540,9 +1203,213 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug-QA";
 		};
-		6999BD482BBA472B00082470 /* Release */ = {
+		69227BD62C6EECBC00D22BC6 /* Debug-QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D73E8C3E092056F2E593AB1 /* Pods-ConnectedIn.debug-qa.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ConnectedIn/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConnectedIn/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ConnectedIn-DEV";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to find nearby churches.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedIn.qa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-QA";
+		};
+		69227BD72C6EECBC00D22BC6 /* Debug-QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E238CE4E74ADB0E1D03923E7 /* Pods-ConnectedInTests.debug-qa.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedInTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnectedIn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ConnectedIn";
+			};
+			name = "Debug-QA";
+		};
+		69227BD82C6EECBC00D22BC6 /* Debug-QA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6360F8C015C133EC77783BF2 /* Pods-ConnectedIn-ConnectedInUITests.debug-qa.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedInUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ConnectedIn;
+			};
+			name = "Debug-QA";
+		};
+		69227BD92C6EECD000D22BC6 /* Debug-PROD */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-PROD";
+		};
+		69227BDA2C6EECD000D22BC6 /* Debug-PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 703C5732524B212357A7CA86 /* Pods-ConnectedIn.debug-prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ConnectedIn/Preview Content\"";
+				DEVELOPMENT_TEAM = M584F93D5Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConnectedIn/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ConnectedIn-DEV";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to find nearby churches.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedIn.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-PROD";
+		};
+		69227BDB2C6EECD000D22BC6 /* Debug-PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8B9D50B7539CF9C5837D9C7 /* Pods-ConnectedInTests.debug-prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedInTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnectedIn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ConnectedIn";
+			};
+			name = "Debug-PROD";
+		};
+		69227BDC2C6EECD000D22BC6 /* Debug-PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639F2ED32A2F901CC44BBF01 /* Pods-ConnectedIn-ConnectedInUITests.debug-prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedInUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ConnectedIn;
+			};
+			name = "Debug-PROD";
+		};
+		69227BDD2C6EECDF00D22BC6 /* Release-QA */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -579,7 +1446,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -596,11 +1463,11 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release-QA";
 		};
-		6999BD4A2BBA472B00082470 /* Debug */ = {
+		69227BDE2C6EECDF00D22BC6 /* Release-QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 098AFD4AE77929C1CF1CD7A4 /* Pods-ConnectedIn.debug.xcconfig */;
+			baseConfigurationReference = 1C38A464358F90BE25D64B09 /* Pods-ConnectedIn.release-qa.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -609,6 +1476,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ConnectedIn/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConnectedIn/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ConnectedIn-DEV";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to find nearby churches.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -619,46 +1489,17 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedIn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedIn.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Release-QA";
 		};
-		6999BD4B2BBA472B00082470 /* Release */ = {
+		69227BDF2C6EECDF00D22BC6 /* Release-QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59E25C5A4FD9E0A6E91B2AE2 /* Pods-ConnectedIn.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ConnectedIn/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedIn;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		6999BD4D2BBA472B00082470 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1E067BAE9E683B1D86644FC /* Pods-ConnectedInTests.debug.xcconfig */;
+			baseConfigurationReference = 4B43F81C0E34DCEFFAFE393C /* Pods-ConnectedInTests.release-qa.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -674,11 +1515,117 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnectedIn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ConnectedIn";
 			};
-			name = Debug;
+			name = "Release-QA";
 		};
-		6999BD4E2BBA472B00082470 /* Release */ = {
+		69227BE02C6EECDF00D22BC6 /* Release-QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91F292ED5D11C9BB57480259 /* Pods-ConnectedInTests.release.xcconfig */;
+			baseConfigurationReference = 1CF89ACAEDE165A110EA8E79 /* Pods-ConnectedIn-ConnectedInUITests.release-qa.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedInUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ConnectedIn;
+			};
+			name = "Release-QA";
+		};
+		69227BE12C6EECE700D22BC6 /* Release-PROD */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-PROD";
+		};
+		69227BE22C6EECE700D22BC6 /* Release-PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EBFB361CD57E957DF2BEC71 /* Pods-ConnectedIn.release-prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ConnectedIn/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConnectedIn/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ConnectedIn-DEV";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to find nearby churches.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedIn.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-PROD";
+		};
+		69227BE32C6EECE700D22BC6 /* Release-PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D76688B802BCA79B0990DC2 /* Pods-ConnectedInTests.release-prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -694,11 +1641,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnectedIn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ConnectedIn";
 			};
-			name = Release;
+			name = "Release-PROD";
 		};
-		6999BD502BBA472B00082470 /* Debug */ = {
+		69227BE42C6EECE700D22BC6 /* Release-PROD */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0D3FE497447C44073EE2E69 /* Pods-ConnectedIn-ConnectedInUITests.debug.xcconfig */;
+			baseConfigurationReference = F385307E269FD5500FE96A35 /* Pods-ConnectedIn-ConnectedInUITests.release-prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -712,11 +1659,240 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ConnectedIn;
 			};
-			name = Debug;
+			name = "Release-PROD";
 		};
-		6999BD512BBA472B00082470 /* Release */ = {
+		6999BD472BBA472B00082470 /* Debug-DEV */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DF20702483FA5D5FAAB3E7D /* Pods-ConnectedIn-ConnectedInUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-DEV";
+		};
+		6999BD482BBA472B00082470 /* Release-DEV */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-DEV";
+		};
+		6999BD4A2BBA472B00082470 /* Debug-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E9162A2849390D1FCF97771 /* Pods-ConnectedIn.debug-dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ConnectedIn/Preview Content\"";
+				DEVELOPMENT_TEAM = M584F93D5Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConnectedIn/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ConnectedIn-DEV";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to find nearby churches.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedIn.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-DEV";
+		};
+		6999BD4B2BBA472B00082470 /* Release-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01B5C844525CB23A813BC8F4 /* Pods-ConnectedIn.release-dev.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ConnectedIn/Preview Content\"";
+				DEVELOPMENT_TEAM = M584F93D5Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ConnectedIn/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "ConnectedIn-DEV";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to find nearby churches.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedIn.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-DEV";
+		};
+		6999BD4D2BBA472B00082470 /* Debug-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9115D62DA4A04F3BC398AD1 /* Pods-ConnectedInTests.debug-dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedInTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnectedIn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ConnectedIn";
+			};
+			name = "Debug-DEV";
+		};
+		6999BD4E2BBA472B00082470 /* Release-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06CBEB3040A80D3DD36AD7EA /* Pods-ConnectedInTests.release-dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedInTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnectedIn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ConnectedIn";
+			};
+			name = "Release-DEV";
+		};
+		6999BD502BBA472B00082470 /* Debug-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97998A7512446A26322C4A8 /* Pods-ConnectedIn-ConnectedInUITests.debug-dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -730,7 +1906,25 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ConnectedIn;
 			};
-			name = Release;
+			name = "Debug-DEV";
+		};
+		6999BD512BBA472B00082470 /* Release-DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82D0BB28A932A818CF0745B4 /* Pods-ConnectedIn-ConnectedInUITests.release-dev.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardjohnalamer.ConnectedIn.ConnectedInUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ConnectedIn;
+			};
+			name = "Release-DEV";
 		};
 /* End XCBuildConfiguration section */
 
@@ -738,40 +1932,80 @@
 		6999BD202BBA472A00082470 /* Build configuration list for PBXProject "ConnectedIn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6999BD472BBA472B00082470 /* Debug */,
-				6999BD482BBA472B00082470 /* Release */,
+				6999BD472BBA472B00082470 /* Debug-DEV */,
+				69227BD92C6EECD000D22BC6 /* Debug-PROD */,
+				69227BD52C6EECBC00D22BC6 /* Debug-QA */,
+				6999BD482BBA472B00082470 /* Release-DEV */,
+				69227BDD2C6EECDF00D22BC6 /* Release-QA */,
+				69227BE12C6EECE700D22BC6 /* Release-PROD */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-DEV";
 		};
 		6999BD492BBA472B00082470 /* Build configuration list for PBXNativeTarget "ConnectedIn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6999BD4A2BBA472B00082470 /* Debug */,
-				6999BD4B2BBA472B00082470 /* Release */,
+				6999BD4A2BBA472B00082470 /* Debug-DEV */,
+				69227BDA2C6EECD000D22BC6 /* Debug-PROD */,
+				69227BD62C6EECBC00D22BC6 /* Debug-QA */,
+				6999BD4B2BBA472B00082470 /* Release-DEV */,
+				69227BDE2C6EECDF00D22BC6 /* Release-QA */,
+				69227BE22C6EECE700D22BC6 /* Release-PROD */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-DEV";
 		};
 		6999BD4C2BBA472B00082470 /* Build configuration list for PBXNativeTarget "ConnectedInTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6999BD4D2BBA472B00082470 /* Debug */,
-				6999BD4E2BBA472B00082470 /* Release */,
+				6999BD4D2BBA472B00082470 /* Debug-DEV */,
+				69227BDB2C6EECD000D22BC6 /* Debug-PROD */,
+				69227BD72C6EECBC00D22BC6 /* Debug-QA */,
+				6999BD4E2BBA472B00082470 /* Release-DEV */,
+				69227BDF2C6EECDF00D22BC6 /* Release-QA */,
+				69227BE32C6EECE700D22BC6 /* Release-PROD */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-DEV";
 		};
 		6999BD4F2BBA472B00082470 /* Build configuration list for PBXNativeTarget "ConnectedInUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6999BD502BBA472B00082470 /* Debug */,
-				6999BD512BBA472B00082470 /* Release */,
+				6999BD502BBA472B00082470 /* Debug-DEV */,
+				69227BDC2C6EECD000D22BC6 /* Debug-PROD */,
+				69227BD82C6EECBC00D22BC6 /* Debug-QA */,
+				6999BD512BBA472B00082470 /* Release-DEV */,
+				69227BE02C6EECDF00D22BC6 /* Release-QA */,
+				69227BE42C6EECE700D22BC6 /* Release-PROD */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-DEV";
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6913D96D2C38375B005EC42B /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.35.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6913D9722C3847B5005EC42B /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6913D96D2C38375B005EC42B /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		6913D9742C3847C5005EC42B /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6913D96D2C38375B005EC42B /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6999BD1D2BBA472A00082470 /* Project object */;
 }

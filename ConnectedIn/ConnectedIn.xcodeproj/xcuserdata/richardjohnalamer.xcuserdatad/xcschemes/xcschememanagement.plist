@@ -4,10 +4,38 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ConnectedIn.xcscheme_^#shared#^_</key>
+		<key>ConnectedIn-DEV.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>41</integer>
+		</dict>
+		<key>ConnectedIn-PROD.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>40</integer>
+		</dict>
+		<key>ConnectedIn-QA.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>36</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6999BD242BBA472A00082470</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6999BD342BBA472B00082470</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6999BD3E2BBA472B00082470</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

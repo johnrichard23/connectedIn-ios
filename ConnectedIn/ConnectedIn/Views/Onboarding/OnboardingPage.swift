@@ -17,17 +17,16 @@ struct OnboardingPage: View {
             VStack{
                 Image(imageName)
                     .resizable()
-                    .opacity(2.0)
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                     .aspectRatio(contentMode: .fill)
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
                     .padding(.vertical, 40)
-                    .brightness(-0.5)
+                    .shadow(color: Color.black.opacity(1.5), radius: 1, x: 0, y: 1.5)
             }
             VStack {
                 Spacer()
                 Text(title)
-                    .font(.system(size: 36, weight: .semibold))
+                    .font(.system(size: 24, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.leading)
                 Text(subtitle)
@@ -38,6 +37,6 @@ struct OnboardingPage: View {
                     .foregroundColor(.white)
             }.padding(.vertical, 20)
         }
-        .padding(.vertical, 30)
+        .padding(.vertical, 420)
     }
 }

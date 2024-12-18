@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct LoginView: View {
+   
     @EnvironmentObject var sessionManager: SessionManager
+    
+    @ObservedObject var tabStore: UserTabStore
+    @ObservedObject var dashboardStore: UserDashboardViewModel
+    @ObservedObject var viewModel: AuthViewModel
+    
     @State private var showingAlert = false
     @State var alertMessage: String = ""
     @State var landingScreenBG: String = "landingScreenBG"
@@ -17,6 +23,8 @@ struct LoginView: View {
     @State private var isPresented: Bool = false
     @State private var email: String = ""
     @State private var password: String = ""
+    
+    @AppStorage("hasSeenOnboarding") var hasSeenOnboarding: Bool = false
     
     let textBoxWidth = 50.0
     let textBoxHeight = 38.0
@@ -51,7 +59,10 @@ struct LoginView: View {
             VStack(alignment: .leading) {
                 Spacer()
                 Button {
-                    self.isPresented = true
+                    Task {
+                        hasSeenOnboarding = true
+                        viewModel.login(username: email, password: password)
+                    }
                 } label: {
                     Text("Login")
                         .foregroundColor(.white)
@@ -83,26 +94,33 @@ struct LoginView: View {
                         .fixedSize(horizontal: true, vertical: true)
                         .frame(minWidth: 0, maxWidth: .infinity)
                 }
-                Button {
-                    //                    print("Forgot Password?")
-                    sessionManager.showSignUp()
-                } label: {
-                    Text("Forgot Password?")
-                        .foregroundColor(Color.connectedInRed)
-                        .font(.system(size: 14, weight: .regular))
-                }.padding(.vertical, 5)
-                    .padding(.horizontal, 10)
+                HStack {
+                    Button {
+                        //                    print("Forgot Password?")
+                        sessionManager.showSignUp()
+                    } label: {
+                        Text("Don't have an account?")
+                            .foregroundColor(Color.black)
+                            .font(.system(size: 14, weight: .regular))
+                    }.padding(.vertical, 5)
+                        .padding(.horizontal, 10)
+                        .padding(.trailing, -10)
+                    Button {
+                        //                    print("Forgot Password?")
+                        sessionManager.showSignUp()
+                    } label: {
+                        Text("Sign Up")
+                            .foregroundColor(Color.connectedInRed)
+                            .font(.system(size: 16, weight: .bold))
+                    }.padding(.vertical, 5)
+                }
             }.padding(.vertical, 135)
             .padding(.horizontal, 20)
             .fullScreenCover(isPresented: $isPresented) {
-                    DashboardView()
+//                DashboardUserView(tabStore: tabStore, dashboardStore: dashboardStore)
             }
         }
     }
 }
 
 
-
-#Preview {
-    LoginView()
-}

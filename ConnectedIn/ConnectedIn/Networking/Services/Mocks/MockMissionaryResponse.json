@@ -1,0 +1,135 @@
+{
+    "missionaries": [
+        {
+            "id": "MIS-001",
+            "name": "Neil Docog",
+            "description": "A missionary of 8 years in Phitsanulok, Thailand.",
+            "avatarUrl": "missionary1",
+            "phone": "+1 234 567 8900",
+            "email": "contact@samplemissionary.com",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "location": "Phitsanulok, Thailand",
+            "photos": [
+                "church1",
+                "church2",
+                "church3",
+                "church4",
+                "church5",
+                "church6"
+            ],
+            "donations": {
+                "gcashNumber": "09171234567",
+                "bankAccount": {
+                    "accountNumber": "1234567890",
+                    "bankName": "Bank of the Philippine Islands"
+                }
+            }
+        },
+        {
+            "id": "MIS-002",
+            "name": "Fletcher Espiel",
+            "description": "A missionary of 2 years in Hanoi, Vietnam.",
+            "avatarUrl": "missionary2",
+            "phone": "+1 234 567 8900",
+            "email": "contact@samplemissionary.com",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "location": "Hanoi, Vietnam",
+            "photos": [
+                "church1",
+                "church2",
+                "church3",
+                "church4",
+                "church5",
+                "church6"
+            ],
+            "donations": {
+                "gcashNumber": "09171234567",
+                "bankAccount": {
+                    "accountNumber": "1234567890",
+                    "bankName": "Bank of the Philippine Islands"
+                }
+            }
+        },
+        {
+            "id": "MIS-003",
+            "name": "Alvin Jebulan",
+            "description": "A missionary of 5 years in Jakarta, Indonesia.",
+            "avatarUrl": "missionary3",
+            "phone": "+1 234 567 8900",
+            "email": "contact@samplemissionary.com",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "location": "Jakarta, Indonesia",
+            "photos": [
+                "church1",
+                "church2",
+                "church3",
+                "church4",
+                "church5",
+                "church6"
+            ],
+            "donations": {
+                "gcashNumber": "09171234567",
+                "bankAccount": {
+                    "accountNumber": "1234567890",
+                    "bankName": "Bank of the Philippine Islands"
+                }
+            }
+        },
+        {
+            "id": "MIS-004",
+            "name": "Joy Detablan",
+            "description": "A missionary of 1 year in Bulan, Sorsogon.",
+            "avatarUrl": "missionary4",
+            "phone": "+1 234 567 8900",
+            "email": "contact@samplemissionary.com",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "location": "Bulan, Sorsogon",
+            "photos": [
+                "church1",
+                "church2",
+                "church3",
+                "church4",
+                "church5",
+                "church6"
+            ],
+            "donations": {
+                "gcashNumber": "09171234567",
+                "bankAccount": {
+                    "accountNumber": "1234567890",
+                    "bankName": "Bank of the Philippine Islands"
+                }
+            }
+        },
+        {
+            "id": "MIS-005",
+            "name": "Scij Balisbis",
+            "description": "A missionary of 3 years in Siquijor.",
+            "avatarUrl": "missionary5",
+            "phone": "+1 234 567 8900",
+            "email": "contact@samplemissionary.com",
+            "facebookUrl": "https://facebook.com",
+            "instagramUrl": "https://instagram.com",
+            "location": "Siquijor, Siquijor",
+            "photos": [
+                "church1",
+                "church2",
+                "church3",
+                "church4",
+                "church5",
+                "church6"
+            ],
+            "donations": {
+                "gcashNumber": "09171234567",
+                "bankAccount": {
+                    "accountNumber": "1234567890",
+                    "bankName": "Bank of the Philippine Islands"
+                }
+            }
+        }
+    ]
+}
+
