@@ -39,86 +39,80 @@ struct LoginView: View {
             Color.white
                 .ignoresSafeArea()
                 .preferredColorScheme(.light)
-            VStack(alignment: .leading, spacing: 15){
-                Spacer()
-                Image(connectedInLightLogo)
-                    .resizable()
-                    .scaledToFit()
-                    .padding(.bottom, 510)
-                    .padding(.horizontal, 40)
-            }.padding(.bottom, 60)
-            VStack(alignment: .leading) {
-                FloatingTextField(title: "Enter your email", isSecure: false, text: $email)
-                    .autocapitalization(.none)
-                    .disableAutocorrection(true)
-                FloatingTextField(title: "Enter your password", isSecure: true, text: $password)
-                    .autocapitalization(.none)
-                
-//                SecureField("Password", text: $password)
-//                    .textFieldStyle(RoundedBorderTextFieldStyle())
-//                    .padding()
-            }.padding(.horizontal, 20)
-                .padding(.bottom, 30)
-            VStack(alignment: .leading) {
-                Spacer()
-                Button {
-                    Task {
-                        hasSeenOnboarding = true
-                        viewModel.login(username: email, password: password)
+            
+            ScrollView {
+                VStack(alignment: .leading, spacing: 15) {
+                    Image(connectedInLightLogo)
+                        .resizable()
+                        .scaledToFit()
+                        .padding(.top, 60)
+                        .padding(.bottom, 40)
+                        .padding(.horizontal, 40)
+                    
+                    VStack(alignment: .leading) {
+                        FloatingTextField(title: "Enter your email", isSecure: false, text: $email)
+                            .autocapitalization(.none)
+                            .disableAutocorrection(true)
+                        FloatingTextField(title: "Enter your password", isSecure: true, text: $password)
+                            .autocapitalization(.none)
                     }
-                } label: {
-                    Text("Login")
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 153)
-                        .padding(.vertical, 20)
-                        .background(Color.connectedInMain)
-                        .cornerRadius(5)
-                        .font(.system(size: 16, weight: .semibold))
-                        .tracking(1.0)
-                        .shadow(color: Color.black.opacity(0.5), radius: 1, x: 0, y: 1.5)
-                        .lineLimit(1)
-                        .fixedSize(horizontal: true, vertical: true)
-                        .frame(minWidth: 0, maxWidth: .infinity)
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 30)
+                    
+                    VStack(alignment: .leading, spacing: 15) {
+                        Button {
+                            Task {
+                                hasSeenOnboarding = true
+                                viewModel.login(username: email, password: password)
+                            }
+                        } label: {
+                            Text("Login")
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 20)
+                                .background(Color.connectedInMain)
+                                .cornerRadius(5)
+                                .font(.system(size: 16, weight: .semibold))
+                                .tracking(1.0)
+                                .shadow(color: Color.black.opacity(0.5), radius: 1, x: 0, y: 1.5)
+                        }
+                        
+                        Button {
+                            sessionManager.showSignUp()
+                        } label: {
+                            Text("Continue with Facebook")
+                                .foregroundColor(.white)
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 20)
+                                .background(Color.connectedInFB)
+                                .cornerRadius(5)
+                                .font(.system(size: 16, weight: .semibold))
+                                .fontWeight(.bold)
+                                .shadow(color: Color.black.opacity(0.5), radius: 1, x: 0, y: 1.5)
+                        }
+                        
+                        HStack {
+                            Button {
+                                sessionManager.showSignUp()
+                            } label: {
+                                Text("Don't have an account?")
+                                    .foregroundColor(Color.black)
+                                    .font(.system(size: 14, weight: .regular))
+                            }
+                            
+                            Button {
+                                sessionManager.showSignUp()
+                            } label: {
+                                Text("Sign Up")
+                                    .foregroundColor(Color.connectedInRed)
+                                    .font(.system(size: 16, weight: .bold))
+                            }
+                        }
+                        .padding(.vertical, 5)
+                    }
+                    .padding(.horizontal, 20)
                 }
-                Button {
-                    //                    print("Forgot Password?")
-                    sessionManager.showSignUp()
-                } label: {
-                    Text("Continue with Facebook")
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 83)
-                        .padding(.vertical, 20)
-                        .background(Color.connectedInFB)
-                        .cornerRadius(5)
-                        .font(.system(size: 16, weight: .semibold))
-                        .fontWeight(.bold)
-                        .shadow(color: Color.black.opacity(0.5), radius: 1, x: 0, y: 1.5)
-                        .lineLimit(1)
-                        .fixedSize(horizontal: true, vertical: true)
-                        .frame(minWidth: 0, maxWidth: .infinity)
-                }
-                HStack {
-                    Button {
-                        //                    print("Forgot Password?")
-                        sessionManager.showSignUp()
-                    } label: {
-                        Text("Don't have an account?")
-                            .foregroundColor(Color.black)
-                            .font(.system(size: 14, weight: .regular))
-                    }.padding(.vertical, 5)
-                        .padding(.horizontal, 10)
-                        .padding(.trailing, -10)
-                    Button {
-                        //                    print("Forgot Password?")
-                        sessionManager.showSignUp()
-                    } label: {
-                        Text("Sign Up")
-                            .foregroundColor(Color.connectedInRed)
-                            .font(.system(size: 16, weight: .bold))
-                    }.padding(.vertical, 5)
-                }
-            }.padding(.vertical, 135)
-            .padding(.horizontal, 20)
+            }
             .fullScreenCover(isPresented: $isPresented) {
 //                DashboardUserView(tabStore: tabStore, dashboardStore: dashboardStore)
             }

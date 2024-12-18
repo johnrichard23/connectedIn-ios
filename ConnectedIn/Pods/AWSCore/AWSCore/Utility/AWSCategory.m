@@ -525,6 +525,11 @@ static NSTimeInterval _clockskew = 0.0;
         || [self isEqualToString:@"ap-southeast-3"]) {
         return AWSRegionAPSoutheast3;
     }
+    if ([self isEqualToString:@"AWSRegionAPSoutheast4"]
+        || [self isEqualToString:@"APSoutheast4"]
+        || [self isEqualToString:@"ap-southeast-4"]) {
+        return AWSRegionAPSoutheast4;
+    }
     if ([self isEqualToString:@"AWSRegionAPSouth1"]
         || [self isEqualToString:@"APSouth1"]
         || [self isEqualToString:@"ap-south-1"]) {
@@ -544,6 +549,11 @@ static NSTimeInterval _clockskew = 0.0;
         || [self isEqualToString:@"CACentral1"]
         || [self isEqualToString:@"ca-central-1"]) {
         return AWSRegionCACentral1;
+    }
+    if ([self isEqualToString:@"AWSRegionCAWest1"]
+        || [self isEqualToString:@"CAWest1"]
+        || [self isEqualToString:@"ca-west-1"]) {
+        return AWSRegionCAWest1;
     }
     if ([self isEqualToString:@"AWSRegionUSGovWest1"]
         || [self isEqualToString:@"USGovWest1"]
@@ -615,6 +625,12 @@ static NSTimeInterval _clockskew = 0.0;
         || [self isEqualToString:@"EUSouth2"]
         || [self isEqualToString:@"eu-south-2"]) {
         return AWSRegionEUSouth2;
+    }
+    
+    if ([self isEqualToString:@"AWSRegionILCentral1"]
+        || [self isEqualToString:@"ILCentral1"]
+        || [self isEqualToString:@"il-central-1"]) {
+        return AWSRegionILCentral1;
     }
 
     return AWSRegionUnknown;

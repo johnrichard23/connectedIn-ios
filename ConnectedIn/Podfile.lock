@@ -1,60 +1,34 @@
 PODS:
-  - Amplify (1.28.1):
-    - Amplify/Default (= 1.28.1)
-  - Amplify/Default (1.28.1)
-  - AmplifyPlugins/AWSCognitoAuthPlugin (1.28.1):
-    - AWSAuthCore (~> 2.28.0)
-    - AWSCognitoIdentityProvider (~> 2.28.0)
-    - AWSCognitoIdentityProviderASF (~> 2.28.0)
-    - AWSCore (~> 2.28.0)
-    - AWSMobileClient (~> 2.28.0)
-    - AWSPluginsCore (= 1.28.1)
-  - AWSAuthCore (2.28.5):
-    - AWSCore (= 2.28.5)
-  - AWSCognitoIdentityProvider (2.28.5):
-    - AWSCognitoIdentityProviderASF (= 2.28.5)
-    - AWSCore (= 2.28.5)
-  - AWSCognitoIdentityProviderASF (2.28.5):
-    - AWSCore (= 2.28.5)
-  - AWSComprehend (2.28.5):
-    - AWSCore (= 2.28.5)
-  - AWSCore (2.28.5)
-  - AWSMobileClient (2.28.5):
-    - AWSAuthCore (= 2.28.5)
-    - AWSCognitoIdentityProvider (= 2.28.5)
-    - AWSCognitoIdentityProviderASF (= 2.28.5)
-    - AWSCore (= 2.28.5)
-  - AWSPluginsCore (1.28.1):
-    - Amplify (= 1.28.1)
-    - AWSCore (~> 2.28.0)
-  - AWSPolly (2.28.5):
-    - AWSCore (= 2.28.5)
-  - AWSPredictionsPlugin (1.28.1):
-    - AWSComprehend (~> 2.28.0)
-    - AWSCore (~> 2.28.0)
-    - AWSPluginsCore (= 1.28.1)
-    - AWSPolly (~> 2.28.0)
-    - AWSRekognition (~> 2.28.0)
-    - AWSTextract (~> 2.28.0)
-    - AWSTranscribeStreaming (~> 2.28.0)
-    - AWSTranslate (~> 2.28.0)
-    - CoreMLPredictionsPlugin (= 1.28.1)
-  - AWSRekognition (2.28.5):
-    - AWSCore (= 2.28.5)
-  - AWSTextract (2.28.5):
-    - AWSCore (= 2.28.5)
-  - AWSTranscribeStreaming (2.28.5):
-    - AWSCore (= 2.28.5)
-  - AWSTranslate (2.28.5):
-    - AWSCore (= 2.28.5)
-  - CoreMLPredictionsPlugin (1.28.1):
-    - Amplify (= 1.28.1)
+  - Amplify (1.31.0):
+    - Amplify/Default (= 1.31.0)
+  - Amplify/Default (1.31.0)
+  - AmplifyPlugins/AWSCognitoAuthPlugin (1.31.0):
+    - AWSAuthCore (~> 2.36.0)
+    - AWSCognitoIdentityProvider (~> 2.36.0)
+    - AWSCognitoIdentityProviderASF (~> 2.36.0)
+    - AWSCore (~> 2.36.0)
+    - AWSMobileClient (~> 2.36.0)
+    - AWSPluginsCore (= 1.31.0)
+  - AWSAuthCore (2.36.7):
+    - AWSCore (= 2.36.7)
+  - AWSCognitoIdentityProvider (2.36.7):
+    - AWSCognitoIdentityProviderASF (= 2.36.7)
+    - AWSCore (= 2.36.7)
+  - AWSCognitoIdentityProviderASF (2.36.7):
+    - AWSCore (= 2.36.7)
+  - AWSCore (2.36.7)
+  - AWSMobileClient (2.36.7):
+    - AWSAuthCore (= 2.36.7)
+    - AWSCognitoIdentityProvider (= 2.36.7)
+    - AWSCognitoIdentityProviderASF (= 2.36.7)
+    - AWSCore (= 2.36.7)
+  - AWSPluginsCore (1.31.0):
+    - Amplify (= 1.31.0)
+    - AWSCore (~> 2.36.0)
 
 DEPENDENCIES:
   - Amplify
   - AmplifyPlugins/AWSCognitoAuthPlugin
-  - AWSPredictionsPlugin
-  - CoreMLPredictionsPlugin
 
 SPEC REPOS:
   trunk:
@@ -63,36 +37,20 @@ SPEC REPOS:
     - AWSAuthCore
     - AWSCognitoIdentityProvider
     - AWSCognitoIdentityProviderASF
-    - AWSComprehend
     - AWSCore
     - AWSMobileClient
     - AWSPluginsCore
-    - AWSPolly
-    - AWSPredictionsPlugin
-    - AWSRekognition
-    - AWSTextract
-    - AWSTranscribeStreaming
-    - AWSTranslate
-    - CoreMLPredictionsPlugin
 
 SPEC CHECKSUMS:
-  Amplify: 050d2daf2c5754eab171606fa3e35619c4babf6e
-  AmplifyPlugins: 55b7fe0fe9a4788b0602b9e65601a832b814a96a
-  AWSAuthCore: e728d73a2b4eed9e826506a1f0fcc58171537267
-  AWSCognitoIdentityProvider: 261fac98d461e9e398bf3c1e18c3cd90578b33ca
-  AWSCognitoIdentityProviderASF: 8e35d6414d9ee2443e9167414ef5e839a58e1e72
-  AWSComprehend: 77045bb126080070b7ca29c45661d295b60d97a8
-  AWSCore: 4bad3f0eb17393b4926a9491e32b835991c56382
-  AWSMobileClient: c898658a4d15e64e07d39c7dc6354fd3ea3055a9
-  AWSPluginsCore: a12e315533b041485d722bdb394bf150ad9cc78e
-  AWSPolly: ef503ee192fce3936e0c4747ff0c888edad0f27c
-  AWSPredictionsPlugin: 19b70a38986ec6cb92ef7a55eabddfbbc5c2e49e
-  AWSRekognition: aa0b988fc9cf5c88625b73ee35191cf092259fd9
-  AWSTextract: 63f887cca2938cddfdd7d476118195a48a1d955f
-  AWSTranscribeStreaming: c8dd39e19ba8f495a8e7ddf4c7d1c2887e07d9be
-  AWSTranslate: 17d3843de9e22ee5feae1d52a099bdd74f8eaa9f
-  CoreMLPredictionsPlugin: 462122ba1b432f2b7758fc67f5835e18866433f3
+  Amplify: 7137ce3c4e8238899d370a86b919a4361b7925e4
+  AmplifyPlugins: 3b1e24559ccfedfe32547851879d5405a90f4d3d
+  AWSAuthCore: 72b211f6fef940b62fa4ded1cdd65cdfce45dcc3
+  AWSCognitoIdentityProvider: 55465d03c154eab4ca8c27ae6a8c7b0675c26fcf
+  AWSCognitoIdentityProviderASF: e51c08b9ecb6cd6227f4351e7fad663e6f0db54b
+  AWSCore: e822fc90f8b3a7e6202091d9ceebd26a579a5161
+  AWSMobileClient: fb15432a866b1cb3c5d13aab66131a20cc769828
+  AWSPluginsCore: 96a33425a6b04d105ff513a8f20f298f8c7bcff0
 
-PODFILE CHECKSUM: 6df7a5e261796a28060ee0285ba29a3ba9cd2a93
+PODFILE CHECKSUM: 6f0164fcc4ea42aaced2bdee15a3994ac0665b5f
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

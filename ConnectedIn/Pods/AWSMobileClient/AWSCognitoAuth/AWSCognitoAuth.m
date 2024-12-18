@@ -22,7 +22,7 @@
 
 NSString *const AWSCognitoAuthErrorDomain = @"com.amazon.cognito.AWSCognitoAuthErrorDomain";
 
-@interface AWSCognitoAuth()<SFSafariViewControllerDelegate, NSURLConnectionDelegate>
+@interface AWSCognitoAuth()<SFSafariViewControllerDelegate, NSURLConnectionDelegate, UIAdaptivePresentationControllerDelegate>
 
 @property (atomic, readwrite) AWSCognitoAuthGetSessionBlock getSessionBlock;
 @property (atomic, readwrite) AWSCognitoAuthSignOutBlock signOutBlock;
@@ -51,7 +51,11 @@ NSString *const AWSCognitoAuthErrorDomain = @"com.amazon.cognito.AWSCognitoAuthE
 API_AVAILABLE(ios(11.0))
 @interface AWSCognitoAuth()
 
+// SFAuthenticationSession was deprecated in iOS 12, but keeping it for flows without a presentationAnchor
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @property (nonatomic, strong) SFAuthenticationSession *sfAuthSession;
+#pragma clang diagnostic pop
 
 @end
 
@@ -80,7 +84,7 @@ API_AVAILABLE(ios(13.0))
 
 @implementation AWSCognitoAuth
 
-NSString *const AWSCognitoAuthSDKVersion = @"2.28.5";
+NSString *const AWSCognitoAuthSDKVersion = @"2.36.7";
 
 
 static NSMutableDictionary *_instanceDictionary = nil;
@@ -200,6 +204,7 @@ static NSString * AWSCognitoAuthAsfDeviceId = @"asf.device.id";
         _useSFAuthenticationSession = authConfiguration.isSFAuthenticationSessionEnabled;
         _sfAuthenticationSessionAvailable = NO;
         _keychain = [AWSCognitoAuthUICKeyChainStore keyChainStoreWithService:[NSString stringWithFormat:@"%@.%@", [NSBundle mainBundle].bundleIdentifier, @"AWSCognitoIdentityUserPool"]];  //Consistent with AWSCognitoIdentityUserPool
+        [_keychain migrateToCurrentAccessibility];
     }
     return self;
 }
@@ -353,6 +358,9 @@ withPresentingViewController:(UIViewController *)presentingViewController {
     }
 }
 
+// SFAuthenticationSession was deprecated in iOS 12, but keeping it for flows without a presentationAnchor
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (void)launchSFWebAuthenticationSession:(NSURL *)hostedUIURL API_AVAILABLE(ios(11.0)) {
     self.sfAuthenticationSessionAvailable = YES;
     NSString *callbackURLScheme = [[self urlEncode:self.authConfiguration.signInRedirectUri] copy];
@@ -366,6 +374,7 @@ withPresentingViewController:(UIViewController *)presentingViewController {
     }];
     [self.sfAuthSession start];
 }
+#pragma clang diagnostic pop
 
 - (void)launchASWebAuthenticationSession:(NSURL *)hostedUIURL API_AVAILABLE(ios(13.0)) {
     NSString *callbackURLString = [[self urlEncode:self.authConfiguration.signInRedirectUri] copy];
@@ -402,11 +411,14 @@ withPresentingViewController:(UIViewController *)presentingViewController {
 
 -(void)showSFSafariViewControllerForURL:(NSURL *)url
            withPresentingViewController:(UIViewController *)presentingViewController{
-    self.svc = [[SFSafariViewController alloc] initWithURL:url entersReaderIfAvailable:NO];
+    SFSafariViewControllerConfiguration *configuration = [[SFSafariViewControllerConfiguration alloc] init];
+    configuration.entersReaderIfAvailable = NO;
+    self.svc = [[SFSafariViewController alloc] initWithURL:url configuration:configuration];
     self.svc.delegate = self;
     self.svc.modalPresentationStyle = UIModalPresentationPopover;
     self.isProcessingSignIn = YES;
     dispatch_async(dispatch_get_main_queue(), ^{
+        self.svc.presentationController.delegate = self;
         __block UIViewController * sourceVC = presentingViewController;
         if(!sourceVC){
             if(!self.delegate){
@@ -649,6 +661,9 @@ withPresentingViewController:(UIViewController *)presentingViewController {
     }
 }
 
+// SFAuthenticationSession was deprecated in iOS 12, but keeping it for flows without a presentationAnchor
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (void)launchSFAuthenticationSessionForSignOut:(NSURL *) url API_AVAILABLE(ios(11.0)) {
     self.sfAuthenticationSessionAvailable = YES;
     NSString *callbackURLScheme = [[self urlEncode:self.authConfiguration.signOutRedirectUri] copy];
@@ -669,10 +684,13 @@ withPresentingViewController:(UIViewController *)presentingViewController {
     }];
     [self.sfAuthSession start];
 }
+#pragma clang diagnostic pop
 
 - (void)signOutSFSafariVC: (UIViewController *) vc
                       url:(NSURL *)url {
-    self.svc = [[SFSafariViewController alloc] initWithURL:url entersReaderIfAvailable:NO];
+    SFSafariViewControllerConfiguration *configuration = [[SFSafariViewControllerConfiguration alloc] init];
+    configuration.entersReaderIfAvailable = NO;
+    self.svc = [[SFSafariViewController alloc] initWithURL:url configuration:configuration];
     self.svc.delegate = self;
     self.svc.modalPresentationStyle = UIModalPresentationPopover;
     self.isProcessingSignOut = YES;
@@ -744,6 +762,18 @@ withPresentingViewController:(UIViewController *)presentingViewController {
 
 /*! @abstract Delegate callback called when the user taps the Done button. Upon this call, the view controller is dismissed modally. */
 - (void)safariViewControllerDidFinish:(SFSafariViewController *)controller {
+    NSError *error = [self getError:@"User cancelled operation" code:AWSCognitoAuthClientErrorUserCanceledOperation];
+    if(self.getSessionBlock){
+        [self setInternalGetSessionErrorAndCancelSignInOperations:error];
+        [self cleanUpAndCallGetSessionBlock:nil error:error];
+    } else {
+        [self setInternalSignOutErrorAndCancelSignOutOperations:error];
+        [self cleanUpAndCallSignOutBlock:error];
+    }
+}
+
+//handle user swipe down to dismiss the SafariViewController
+- (void)presentationControllerDidDismiss:(UIPresentationController *) presentationController {
     NSError *error = [self getError:@"User cancelled operation" code:AWSCognitoAuthClientErrorUserCanceledOperation];
     if(self.getSessionBlock){
         [self setInternalGetSessionErrorAndCancelSignInOperations:error];

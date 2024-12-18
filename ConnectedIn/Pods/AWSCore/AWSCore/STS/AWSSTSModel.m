@@ -1,5 +1,5 @@
 //
-// Copyright 2010-2022 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// Copyright 2010-2023 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License").
 // You may not use this file except in compliance with the License.
@@ -30,6 +30,7 @@ NSString *const AWSSTSErrorDomain = @"com.amazonaws.AWSSTSErrorDomain";
              @"externalId" : @"ExternalId",
              @"policy" : @"Policy",
              @"policyArns" : @"PolicyArns",
+             @"providedContexts" : @"ProvidedContexts",
              @"roleArn" : @"RoleArn",
              @"roleSessionName" : @"RoleSessionName",
              @"serialNumber" : @"SerialNumber",
@@ -42,6 +43,10 @@ NSString *const AWSSTSErrorDomain = @"com.amazonaws.AWSSTSErrorDomain";
 
 + (NSValueTransformer *)policyArnsJSONTransformer {
     return [NSValueTransformer awsmtl_JSONArrayTransformerWithModelClass:[AWSSTSPolicyDescriptorType class]];
+}
+
++ (NSValueTransformer *)providedContextsJSONTransformer {
+    return [NSValueTransformer awsmtl_JSONArrayTransformerWithModelClass:[AWSSTSProvidedContext class]];
 }
 
 + (NSValueTransformer *)tagsJSONTransformer {
@@ -408,6 +413,21 @@ return [date aws_stringValue:AWSDateISO8601DateFormat1];
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
 	return @{
              @"arn" : @"arn",
+             };
+}
+
+@end
+
+@implementation AWSSTSProvidedContext
+
++ (BOOL)supportsSecureCoding {
+    return YES;
+}
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+	return @{
+             @"contextAssertion" : @"ContextAssertion",
+             @"providerArn" : @"ProviderArn",
              };
 }
 

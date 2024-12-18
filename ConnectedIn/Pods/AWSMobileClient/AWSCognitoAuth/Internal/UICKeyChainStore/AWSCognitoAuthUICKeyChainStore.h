@@ -87,12 +87,12 @@ typedef NS_ENUM(NSInteger, AWSCognitoAuthUICKeyChainStoreAuthenticationType) {
 typedef NS_ENUM(NSInteger, AWSCognitoAuthUICKeyChainStoreAccessibility) {
     AWSCognitoAuthUICKeyChainStoreAccessibilityWhenUnlocked = 1,
     AWSCognitoAuthUICKeyChainStoreAccessibilityAfterFirstUnlock,
-    AWSCognitoAuthUICKeyChainStoreAccessibilityAlways,
+    AWSCognitoAuthUICKeyChainStoreAccessibilityAlways __deprecated_enum_msg("Use an accessibility level that provides some user protection, such as AWSCognitoAuthUICKeyChainStoreAccessibilityAfterFirstUnlock"),
     AWSCognitoAuthUICKeyChainStoreAccessibilityWhenPasscodeSetThisDeviceOnly
     __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0),
     AWSCognitoAuthUICKeyChainStoreAccessibilityWhenUnlockedThisDeviceOnly,
     AWSCognitoAuthUICKeyChainStoreAccessibilityAfterFirstUnlockThisDeviceOnly,
-    AWSCognitoAuthUICKeyChainStoreAccessibilityAlwaysThisDeviceOnly,
+    AWSCognitoAuthUICKeyChainStoreAccessibilityAlwaysThisDeviceOnly __deprecated_enum_msg("Use an accessibility level that provides some user protection, such as AWSCognitoAuthUICKeyChainStoreAccessibilityAfterFirstUnlockThisDeviceOnly"),
 }
 __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_4_0);
 
@@ -199,6 +199,12 @@ __OSX_AVAILABLE_STARTING(__MAC_10_10, __IPHONE_8_0);
 + (void)requestSharedWebCredentialForDomain:(nullable NSString *)domain account:(nullable NSString *)account completion:(nullable void (^)(NSArray UIC_CREDENTIAL_TYPE *credentials, NSError * __nullable error))completion;
 
 + (NSString *)generatePassword;
+
+/// Migrate the existing items in keychain to the current accessibility
+///
+/// Invoke this method if you have changed the keychain accessibility but there are already existing keychain items
+/// stored with a different accessibility setting.
+- (void)migrateToCurrentAccessibility;
 #endif
 
 @end
