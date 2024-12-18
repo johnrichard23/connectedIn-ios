@@ -80,6 +80,10 @@ typedef NS_ENUM(NSInteger, AWSRegionType) {
      */
     AWSRegionAPSoutheast3 NS_SWIFT_NAME(APSoutheast3),
     /**
+     * Asia Pacific (Melbourne)
+     */
+    AWSRegionAPSoutheast4 NS_SWIFT_NAME(APSoutheast4),
+    /**
      *  Asia Pacific (Mumbai)
      */
     AWSRegionAPSouth1 NS_SWIFT_NAME(APSouth1),
@@ -99,6 +103,10 @@ typedef NS_ENUM(NSInteger, AWSRegionType) {
      *  Canada (Central)
      */
     AWSRegionCACentral1 NS_SWIFT_NAME(CACentral1),
+    /**
+     *  Canada West (Calgary)
+     */
+    AWSRegionCAWest1 NS_SWIFT_NAME(CAWest1),
     /**
      *  AWS GovCloud (US West)
      */
@@ -143,6 +151,10 @@ typedef NS_ENUM(NSInteger, AWSRegionType) {
      *  Europe (Spain)
      */
     AWSRegionEUSouth2 NS_SWIFT_NAME(EUSouth2),
+    /**
+     *  Israel (Tel Aviv)
+     */
+    AWSRegionILCentral1 NS_SWIFT_NAME(ILCentral1),
 };
 
 /**
@@ -232,6 +244,10 @@ typedef NS_ENUM(NSInteger, AWSServiceType) {
      *  Amazon Kinesis Video Signaling
      */
     AWSServiceKinesisVideoSignaling NS_SWIFT_NAME(KinesisVideoSignaling),
+    /**
+     *  Amazon Kinesis Web RTC Storage
+     */
+    AWSServiceKinesisVideoWebRTCStorage NS_SWIFT_NAME(KinesisVideoWebRTCStorage),
     /**
      *  AWS Key Management Service (KMS)
      */
