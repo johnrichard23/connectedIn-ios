@@ -25,10 +25,13 @@
 		69223DF92CDA70D7003C2A30 /* MissionaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69223DF82CDA70D7003C2A30 /* MissionaryViewModel.swift */; };
 		6937C7002CAEBC0A007D99EE /* FeaturedMinistryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937C6FF2CAEBC0A007D99EE /* FeaturedMinistryCardView.swift */; };
 		6939D07E2CA39C7700519392 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939D07D2CA39C7700519392 /* AuthViewModel.swift */; };
+		69531F0A2D13A89500534446 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69531F062D13A89500534446 /* ForgotPasswordView.swift */; };
+		69531F0B2D13A89500534446 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69531F082D13A89500534446 /* ResetPasswordView.swift */; };
 		695D1D6D2CD36BC30015827C /* ChurchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695D1D6C2CD36BC30015827C /* ChurchDetailView.swift */; };
 		695E38F82BBCF67F0053979E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E38F72BBCF67F0053979E /* OnboardingView.swift */; };
 		695E38FF2BBD324F0053979E /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E38FE2BBD324F0053979E /* OnboardingPage.swift */; };
 		6961A0082BBBA5F90012B441 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6961A0072BBBA5F90012B441 /* LandingViewModel.swift */; };
+		69854FB52D13151100AAFC28 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69854FB32D13151100AAFC28 /* SplashScreen.swift */; };
 		6999BD292BBA472A00082470 /* ConnectedInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999BD282BBA472A00082470 /* ConnectedInApp.swift */; };
 		6999BD2B2BBA472A00082470 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999BD2A2BBA472A00082470 /* ContentView.swift */; };
 		6999BD2D2BBA472B00082470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6999BD2C2BBA472B00082470 /* Assets.xcassets */; };
@@ -139,10 +142,13 @@
 		69223DF82CDA70D7003C2A30 /* MissionaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionaryViewModel.swift; sourceTree = "<group>"; };
 		6937C6FF2CAEBC0A007D99EE /* FeaturedMinistryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedMinistryCardView.swift; sourceTree = "<group>"; };
 		6939D07D2CA39C7700519392 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		69531F062D13A89500534446 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		69531F082D13A89500534446 /* ResetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		695D1D6C2CD36BC30015827C /* ChurchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchDetailView.swift; sourceTree = "<group>"; };
 		695E38F72BBCF67F0053979E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		695E38FE2BBD324F0053979E /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
 		6961A0072BBBA5F90012B441 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		69854FB32D13151100AAFC28 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		6989C35C2CB7C1350033B308 /* MockChurchResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockChurchResponse.json; sourceTree = "<group>"; };
 		6999BD252BBA472A00082470 /* ConnectedIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectedIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6999BD282BBA472A00082470 /* ConnectedInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedInApp.swift; sourceTree = "<group>"; };
@@ -365,6 +371,22 @@
 			path = Contribute;
 			sourceTree = "<group>";
 		};
+		69531F072D13A89500534446 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				69531F062D13A89500534446 /* ForgotPasswordView.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		69531F092D13A89500534446 /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				69531F082D13A89500534446 /* ResetPasswordView.swift */,
+			);
+			path = ResetPassword;
+			sourceTree = "<group>";
+		};
 		695E38FB2BBCF8F20053979E /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +394,21 @@
 				695E38FE2BBD324F0053979E /* OnboardingPage.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		69854FB42D13151100AAFC28 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				69854FB32D13151100AAFC28 /* SplashScreen.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		69854FB62D13151D00AAFC28 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		6989C35A2CB656A90033B308 /* Mocks */ = {
@@ -467,10 +504,14 @@
 		6999BD532BBA4E4800082470 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69531F072D13A89500534446 /* ForgotPassword */,
+				69531F092D13A89500534446 /* ResetPassword */,
 				69FB93AA2CAC797E00F02190 /* Helpers */,
 				69C8E6C22BD1F59400578F9E /* Admin */,
 				69C8E6C12BD1F58E00578F9E /* User */,
 				69C8E6B42BD15D7400578F9E /* Login */,
+				69854FB42D13151100AAFC28 /* Splash */,
+				69854FB62D13151D00AAFC28 /* SignUp */,
 				695E38FB2BBCF8F20053979E /* Onboarding */,
 				6999BD5A2BBA5A3D00082470 /* LandingView.swift */,
 				69C8E6B72BD1611500578F9E /* Others */,
@@ -1065,11 +1106,13 @@
 				69EED6BB2C5DD2A000FA9676 /* LocationsViewModel.swift in Sources */,
 				69223DF92CDA70D7003C2A30 /* MissionaryViewModel.swift in Sources */,
 				699E49232CEDE303003129AB /* MinistryRowView.swift in Sources */,
+				69531F0B2D13A89500534446 /* ResetPasswordView.swift in Sources */,
 				69FB93A92CABEFF100F02190 /* ContributionView.swift in Sources */,
 				6901AEB42BE526B800EDA966 /* UserDashboardViewModel.swift in Sources */,
 				69FB93C22CAE78C300F02190 /* FeaturedMissionaryCardView.swift in Sources */,
 				69FB93AC2CAC799300F02190 /* BlurView.swift in Sources */,
 				699E491F2CEDE2CC003129AB /* ChurchRowView.swift in Sources */,
+				69531F0A2D13A89500534446 /* ForgotPasswordView.swift in Sources */,
 				69D6DE052CDB88A20053E1F3 /* HomeHeaderView.swift in Sources */,
 				699E49182CEDD02F003129AB /* DirectGivingViewModel.swift in Sources */,
 				695E38FF2BBD324F0053979E /* OnboardingPage.swift in Sources */,
@@ -1102,6 +1145,7 @@
 				69FB93A32CAAFE0000F02190 /* ContributionService.swift in Sources */,
 				69FB93A62CAB050300F02190 /* ContributionViewModel.swift in Sources */,
 				69C8E6B32BCCD9FC00578F9E /* LoginView.swift in Sources */,
+				69854FB52D13151100AAFC28 /* SplashScreen.swift in Sources */,
 				69EED6C62C5DD88900FA9676 /* ChurchesLocationPreviewView.swift in Sources */,
 				6999BD5F2BBAF9EF00082470 /* ColorExtensions.swift in Sources */,
 				69FB93C02CAE769300F02190 /* FeaturedChurchCardView.swift in Sources */,

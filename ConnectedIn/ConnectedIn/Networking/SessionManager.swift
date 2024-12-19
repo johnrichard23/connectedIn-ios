@@ -23,6 +23,7 @@ enum AuthState {
     case signUp
     case login
     case forgotPassword
+    case resetPassword
     case userDashboard(user: AuthUser)
     case sessionUser(user: AuthUser)
     case sessionChurch(user: AuthUser)
@@ -31,46 +32,69 @@ enum AuthState {
 }
 
 final class SessionManager: ObservableObject {
-    @Published var authState: AuthState = .onboarding
     static let shared = SessionManager()
-    var connectedInUser = User(email: "jahnrichards23@gmail.com")
+    @Published var authState: AuthState = .onboarding
+    var authViewModel: AuthViewModel?
+    @Published var connectedInUser: User
     var currentEmail: String = ""
     var signInEmail: String = ""
     var signInPassword: String = ""
     var savedTokens: Tokens?
     
+    internal init() {
+        self.connectedInUser = User(email: "")
+    }
     
     func getCurrentAuthUser() async {
-        //            authState = .userDashboard(user: DummyUser())
         do {
             let user = try await Amplify.Auth.getCurrentUser()
             
-//            self.getAuthToken()
-            
             guard let savedUser = UserDefaultsManager.shared.getConnectedInUser() else {
-                self.authState = .login
+                await MainActor.run {
+                    self.authState = .login
+                    self.authViewModel?.isAuthenticated = false
+                }
                 return
             }
             
-            self.currentEmail = savedUser.email
-            self.connectedInUser = savedUser
-            self.connectedInUser.userID = savedUser.userID
+            await MainActor.run {
+                self.currentEmail = savedUser.email
+                self.connectedInUser = savedUser
+                self.connectedInUser.userID = savedUser.userID
+                self.authViewModel?.isAuthenticated = true
+            }
             
-            // TO DO: Fix forced unwrapped
-            guard let currentUserType: UserType = getCurrentUserRole(userRole: savedUser.role!) else {
-                self.authState = .login
+            // Safely unwrap user role
+            guard let userRole = savedUser.role,
+                  let currentUserType = getCurrentUserRole(userRole: userRole) else {
+                await MainActor.run {
+                    self.authState = .login
+                    self.authViewModel?.isAuthenticated = false
+                }
                 return
             }
             
-            switch currentUserType {
-            case .church:
-                authState = .sessionChurch(user: user)
-            case .user:
-                authState = .sessionUser(user: user)
+            await MainActor.run {
+                switch currentUserType {
+                case .church:
+                    self.authState = .sessionChurch(user: user)
+                case .user:
+                    self.authState = .sessionUser(user: user)
+                }
+            }
+        } catch let authError as AuthError {
+            print("❌ Auth error getting current user: \(authError.errorDescription)")
+            print("Recovery suggestion: \(authError.recoverySuggestion ?? "No recovery suggestion")")
+            await MainActor.run {
+                self.authState = .login
+                self.authViewModel?.isAuthenticated = false
             }
         } catch {
-//            authState = .userDashboard(user: DummyUser())
-            print("Error fetching current user")
+            print("❌ Unexpected error getting current user: \(error)")
+            await MainActor.run {
+                self.authState = .login
+                self.authViewModel?.isAuthenticated = false
+            }
         }
     }
         
@@ -223,17 +247,25 @@ final class SessionManager: ObservableObject {
     
     
     func showLogin() {
-        
+        authState = .login
+    }
+    
+    func showSignUp() {
+        authState = .signUp
+    }
+    
+    func showForgotPassword() {
+        authState = .forgotPassword
+    }
+    
+    func showResetPassword() {
+        authState = .resetPassword
     }
     
     func saveConnectedInUser(user: User) {
         self.connectedInUser = user
         print("SM: \(getCurrentUserRole(userRole: user.role!))")
         UserDefaultsManager.shared.saveConnectedInUser(user: self.connectedInUser)
-        
-    }
-    
-    func showSignUp() {
         
     }
     
@@ -271,6 +303,17 @@ final class SessionManager: ObservableObject {
         case .failed(let error):
             // Sign Out failed with an exception, leaving the user signed in.
             print("SignOut failed with \(error)")
+        }
+    }
+    
+    func signOut() async {
+        let signOutResult = await Amplify.Auth.signOut()
+        print("✅ Successfully signed out: \(signOutResult)")
+        
+        await MainActor.run {
+            authViewModel?.isAuthenticated = false
+            authState = .login
+            UserDefaults.standard.removeObject(forKey: "hasSeenOnboarding")
         }
     }
 }

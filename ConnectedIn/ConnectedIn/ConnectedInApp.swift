@@ -8,90 +8,108 @@
 import SwiftUI
 import Amplify
 import AWSCognitoAuthPlugin
+import Combine
 
-@main
-struct ConnectedInApp: App {
+@MainActor
+final class AppInitializer: ObservableObject {
+    @Published var isInitializing: Bool = true
+    let sessionManager: SessionManager
+    @AppStorage("hasLaunchedBefore") private var hasLaunchedBefore: Bool = false
     
-    @ObservedObject var sessionManager = SessionManager()
-    @StateObject var authViewModel = AuthViewModel()
-    @AppStorage("hasSeenOnboarding") var hasSeenOnboarding: Bool = false
-    @AppStorage("isLoggedIn")
-    var isLoggedIn: Bool = false
-    
-    init() {
-        // Debug code to check configuration files
-        if let path = Bundle.main.path(forResource: "amplifyconfiguration", ofType: "json") {
-            print("Found amplifyconfiguration.json at: \(path)")
-            if let data = try? Data(contentsOf: URL(fileURLWithPath: path)),
-               let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                print("Configuration content:")
-                print(json)
+    init(sessionManager: SessionManager) {
+        self.sessionManager = sessionManager
+        
+        // Skip initialization animation if not first launch
+        if hasLaunchedBefore {
+            Task {
+                await quickInitialize()
             }
         } else {
-            print("❌ amplifyconfiguration.json not found in bundle")
+            initializeWithSplash()
         }
-        
+    }
+    
+    private func quickInitialize() async {
         do {
-            // First try to add the plugin
+            try await initializeAWSQuietly()
+            await checkUserState()
+            isInitializing = false
+        } catch {
+            print("❌ Quick initialization failed:", error)
+            // Fallback to regular initialization if quick init fails
+            initializeWithSplash()
+        }
+    }
+    
+    private func initializeWithSplash() {
+        Task {
             do {
-                try Amplify.add(plugin: AWSCognitoAuthPlugin())
-                print("✅ Auth plugin added successfully")
+                try await initializeAWSQuietly()
+                await checkUserState()
+                
+                // Add a small delay for splash screen animation
+                try await Task.sleep(nanoseconds: 2_000_000_000) // 2 seconds
+                isInitializing = false
+                hasLaunchedBefore = true
             } catch {
-                print("❌ Error adding auth plugin: \(error)")
-                throw error
-            }
-            
-            // Then try to configure Amplify
-            do {
-                try Amplify.configure()
-                print("✅ Amplify configured successfully")
-            } catch {
-                print("❌ Error configuring Amplify: \(error)")
+                print("❌ Could not initialize Amplify: \(error)")
                 if let authError = error as? AuthError {
                     print("Auth Error Details: \(authError.errorDescription)")
                     print("Recovery Suggestion: \(authError.recoverySuggestion ?? "No recovery suggestion available")")
-                    
-                    // Try to read the configuration to debug
-                    if let configPath = Bundle.main.path(forResource: "awsconfiguration", ofType: "json"),
-                       let data = try? Data(contentsOf: URL(fileURLWithPath: configPath)),
-                       let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                        print("AWS Configuration structure:")
-                        if let auth = json["auth"] as? [String: Any] {
-                            print("Auth configuration found")
-                            if let plugins = auth["plugins"] as? [String: Any] {
-                                print("Plugins found")
-                                if let cognito = plugins["awsCognitoAuthPlugin"] as? [String: Any] {
-                                    print("Cognito plugin configuration found")
-                                    if let userPool = cognito["CognitoUserPool"] as? [String: Any] {
-                                        print("User pool configuration found")
-                                    } else {
-                                        print("❌ No user pool configuration found")
-                                    }
-                                } else {
-                                    print("❌ No Cognito plugin configuration found")
-                                }
-                            } else {
-                                print("❌ No plugins configuration found")
-                            }
-                        } else {
-                            print("❌ No auth configuration found")
-                        }
-                    }
                 }
-                throw error
+                
+                await checkUserState()
+                isInitializing = false
+                hasLaunchedBefore = true
             }
+        }
+    }
+    
+    private func initializeAWSQuietly() async throws {
+        // Silent initialization for subsequent launches
+        try Amplify.add(plugin: AWSCognitoAuthPlugin())
+        try Amplify.configure()
+    }
+    
+    private func checkUserState() async {
+        do {
+            // First check if we have an active session
+            let session = try await Amplify.Auth.fetchAuthSession()
             
-            print("✅ Amplify initialization complete")
+            if session.isSignedIn {
+                print("✅ Active session found, getting current user")
+                await self.sessionManager.getCurrentAuthUser()
+            } else {
+                print("❌ No active session")
+                if UserDefaults.standard.bool(forKey: "hasSeenOnboarding") {
+                    self.sessionManager.authState = .login
+                } else {
+                    self.sessionManager.authState = .onboarding
+                }
+            }
         } catch {
-            print("❌ Could not initialize Amplify: \(error)")
+            print("❌ Error checking session:", error)
+            if UserDefaults.standard.bool(forKey: "hasSeenOnboarding") {
+                self.sessionManager.authState = .login
+            } else {
+                self.sessionManager.authState = .onboarding
+            }
         }
-        
-        if hasSeenOnboarding {
-            sessionManager.authState = .sessionUser(user: DummyUser())
-            //getCurrentUser()
-        } else {
-            sessionManager.authState = .onboarding
-        }
+    }
+}
+
+@main
+struct ConnectedInApp: App {
+    @StateObject private var sessionManager = SessionManager()
+    @StateObject private var authViewModel: AuthViewModel
+    @AppStorage("hasSeenOnboarding") var hasSeenOnboarding: Bool = false
+    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
+    @StateObject private var appInitializer: AppInitializer
+    
+    init() {
+        _authViewModel = StateObject(wrappedValue: AuthViewModel(sessionManager: SessionManager.shared))
+        _appInitializer = StateObject(wrappedValue: AppInitializer(sessionManager: SessionManager.shared))
+        _sessionManager = StateObject(wrappedValue: SessionManager.shared)
     }
     
     func getCurrentUser() {
@@ -102,21 +120,43 @@ struct ConnectedInApp: App {
     
     var body: some Scene {
         WindowGroup {
-                switch sessionManager.authState {
-                case .onboarding:
-                    LandingView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: ""))).environmentObject(sessionManager)
-                case .signUp:
-                    LandingView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: ""))).environmentObject(sessionManager)
-                case .login:
-                    LoginView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: "")), viewModel: authViewModel).environmentObject(sessionManager)
-                case .forgotPassword:
-                    LandingView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: ""))).environmentObject(sessionManager)
-                case .userDashboard(user: let user):
-                    DashboardUserView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: ""))).environmentObject(sessionManager)
-                case .sessionUser(user: let user):
-                    DashboardUserView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: ""))).environmentObject(sessionManager)
-                default:
-                    LandingView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: ""))).environmentObject(sessionManager)
+            ZStack {
+                if appInitializer.isInitializing {
+                    SplashScreen()
+                } else {
+                    switch sessionManager.authState {
+                    case .onboarding:
+                        LandingView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: "")))
+                            .environmentObject(sessionManager)
+                    case .signUp:
+                        LandingView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: "")))
+                            .environmentObject(sessionManager)
+                    case .login:
+                        LoginView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: "")), viewModel: authViewModel)
+                            .environmentObject(sessionManager)
+                    case .forgotPassword:
+                        ForgotPasswordView(viewModel: authViewModel)
+                            .environmentObject(sessionManager)
+                    case .resetPassword:
+                        ResetPasswordView(viewModel: authViewModel)
+                            .environmentObject(sessionManager)
+                    case .confirmCode(username: let username):
+                        Text("Confirm Code")
+                            .environmentObject(sessionManager)
+                    case .confirmMFACode:
+                        Text("MFA Code")
+                            .environmentObject(sessionManager)
+                    case .sessionUser(let user):
+                        DashboardUserView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: user.username)))
+                            .environmentObject(sessionManager)
+                    case .sessionChurch(let user):
+                        DashboardUserView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: user.username)))
+                            .environmentObject(sessionManager)
+                    case .userDashboard(let user):
+                        DashboardUserView(tabStore: UserTabStore(), dashboardStore: UserDashboardViewModel(currentUser: User(email: user.username)))
+                            .environmentObject(sessionManager)
+                    }
+                }
             }
         }
     }
