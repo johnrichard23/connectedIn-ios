@@ -47,41 +47,36 @@ struct HomeHeaderView: View {
         HStack {
             profileSection
             Spacer()
-            menuButton
+            logoutButton
         }
         .padding()
     }
     
     private var profileSection: some View {
-        HStack {
-            profileImage
-            userGreeting
+        HStack(spacing: 10) {
+            Image("profileIcon")
+                .resizable()
+                .frame(width: profileImageSize, height: profileImageSize)
+                .clipShape(Circle())
+            
+            Text("Welcome back!")
+                .font(.system(size: 14))
+                .foregroundColor(.gray)
         }
     }
     
-    private var profileImage: some View {
-        Image("profileIcon")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(maxWidth: profileImageSize, maxHeight: profileImageSize)
-            .accessibilityLabel("Profile picture")
-    }
-    
-    private var userGreeting: some View {
-        Text("Hi \(userName)")
-            .font(.system(size: 12, weight: .regular))
-            .foregroundColor(.black)
-            .accessibilityLabel("Greeting for \(userName)")
-    }
-    
-    private var menuButton: some View {
-        Image("menuButton")
-            .resizable()
-            .foregroundColor(.white)
-            .aspectRatio(contentMode: .fill)
-            .frame(width: menuButtonSize, height: menuButtonSize)
-            .padding(.trailing, 1)
-            .accessibilityLabel("Menu")
+    private var logoutButton: some View {
+        Button(action: {
+            Task {
+                await sessionManager.signOut()
+            }
+        }) {
+            Text("Logout")
+                .font(.system(size: 14, weight: .medium))
+                .foregroundColor(.red)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 6)
+        }
     }
     
     // MARK: - Computed Properties

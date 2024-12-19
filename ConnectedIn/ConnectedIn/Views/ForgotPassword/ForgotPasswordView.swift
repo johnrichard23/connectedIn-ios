@@ -1,22 +1,11 @@
-//
-//  LoginView.swift
-//  ConnectedIn
-//
-//  Created by Richard John Alamer on 4/15/24.
-//
-
 import SwiftUI
+import Amplify
 
-struct LoginView: View {
-   
+struct ForgotPasswordView: View {
     @EnvironmentObject var sessionManager: SessionManager
-    
-    @ObservedObject var tabStore: UserTabStore
-    @ObservedObject var dashboardStore: UserDashboardViewModel
     @ObservedObject var viewModel: AuthViewModel
     
     @State private var email: String = ""
-    @State private var password: String = ""
     @State private var isLoading = false
     
     var body: some View {
@@ -31,23 +20,32 @@ struct LoginView: View {
                         .padding(.top, geometry.size.height * 0.1)
                         .padding(.bottom, 40)
                     
+                    Text("Forgot Password")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding(.bottom, 20)
+                    
+                    Text("If you're a new user, please try logging in with your temporary password first.")
+                        .font(.footnote)
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 20)
+                        .padding(.bottom, 20)
+                    
                     // Form Section
                     VStack(spacing: 20) {
                         FloatingTextField(title: "Email Address", isSecure: false, text: $email)
                             .textInputAutocapitalization(.never)
                             .keyboardType(.emailAddress)
-                        
-                        FloatingTextField(title: "Password", isSecure: true, text: $password)
-                            .textInputAutocapitalization(.never)
                     }
                     .padding(.horizontal, 20)
                     
                     // Button Section
                     VStack(spacing: 15) {
                         Button {
-                            isLoading = true
                             Task {
-                                await viewModel.login(username: email, password: password)
+                                isLoading = true
+                                await viewModel.resetPassword(username: email)
                                 isLoading = false
                             }
                         } label: {
@@ -55,35 +53,23 @@ struct LoginView: View {
                                 ProgressView()
                                     .progressViewStyle(CircularProgressViewStyle(tint: .white))
                             } else {
-                                Text("Log In")
-                                    .font(.system(size: 16, weight: .semibold))
-                                    .foregroundColor(.white)
-                                    .frame(maxWidth: .infinity)
-                                    .frame(height: 50)
+                                Text("Reset Password")
                             }
                         }
                         .frame(maxWidth: .infinity)
                         .frame(height: 50)
                         .background(Color.connectedInMain)
+                        .foregroundColor(.white)
                         .cornerRadius(8)
-                        .disabled(email.isEmpty || password.isEmpty || isLoading)
+                        .disabled(email.isEmpty || isLoading)
                         
-                        HStack {
-                            Text("Don't have an account?")
+                        Button {
+                            sessionManager.showLogin()
+                        } label: {
+                            Text("Back to Login")
                                 .font(.system(size: 14))
                                 .foregroundColor(.black)
-                            
-                            Spacer()
-                            
-                            Button {
-                                viewModel.showForgotPassword()
-                            } label: {
-                                Text("Forgot Password?")
-                                    .font(.system(size: 14))
-                                    .foregroundColor(.black)
-                            }
                         }
-                        .padding(.top, 10)
                     }
                     .padding(.horizontal, 20)
                     .padding(.top, 30)
@@ -105,16 +91,6 @@ struct LoginView: View {
                 dismissButton: .default(Text("OK"))
             )
         }
-        .onChange(of: viewModel.isAuthenticated) { oldValue, newValue in
-            if newValue {
-                print("✅ User is authenticated, navigating to dashboard")
-            }
-        }
         .preferredColorScheme(.light)
     }
-}
-
-struct ErrorAlert: Identifiable {
-    let id = UUID()
-    let message: String
 }

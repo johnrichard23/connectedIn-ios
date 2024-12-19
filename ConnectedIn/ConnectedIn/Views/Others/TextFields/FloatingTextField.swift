@@ -24,38 +24,41 @@ struct FloatingTextField: View {
                     if isSecure {
                         if isShowPassword {
                             TextField("", text: $text)
-                                .autocapitalization(.none)
-                                .disableAutocorrection(true)
+                                .textInputAutocapitalization(.never)
+                                .autocorrectionDisabled()
                                 .foregroundColor(.black)
+                                .textContentType(.none)
                         } else {
                             SecureField("", text: $text)
-                                .autocapitalization(.none)
-                                .disableAutocorrection(true)
+                                .textInputAutocapitalization(.never)
+                                .autocorrectionDisabled()
                                 .foregroundColor(.black)
+                                .textContentType(title.lowercased().contains("password") ? .password : .none)
                         }
-
                     } else {
                         TextField("", text: $text)
-                            .autocapitalization(.none)
-                            .disableAutocorrection(true)
+                            .textInputAutocapitalization(.never)
+                            .autocorrectionDisabled()
                             .foregroundColor(.black)
+                            .textContentType(title.lowercased().contains("email") ? .emailAddress : .none)
                     }
                 }
+                .frame(height: 25)
             }
             if isSecure {
                 Button(action: {
                     self.isShowPassword.toggle()
-                    }) {
-                        Image(systemName: self.isShowPassword ?  "eye" : "eye.slash")
-                            .accentColor(.black)
-                    }
-
+                }) {
+                    Image(systemName: self.isShowPassword ? "eye" : "eye.slash")
+                        .accentColor(.black)
+                }
             }
-
-        } // hstack
+        }
         .padding(EdgeInsets(top: 8, leading: 20, bottom: 8, trailing: 20))
         .background(Color.white)
         .overlay(
-                RoundedRectangle(cornerRadius: 6).stroke(Color.gray, lineWidth: 1)
-            )
-    }}
+            RoundedRectangle(cornerRadius: 6)
+                .stroke(Color.gray, lineWidth: 1)
+        )
+    }
+}
