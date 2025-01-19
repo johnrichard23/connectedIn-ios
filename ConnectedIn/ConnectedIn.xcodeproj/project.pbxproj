@@ -16,8 +16,6 @@
 		6913933B2CC23CEB006111FC /* ChurchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6913933A2CC23CEB006111FC /* ChurchViewModel.swift */; };
 		6913933E2CC240AA006111FC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6913933D2CC240AA006111FC /* Constants.swift */; };
 		6913933F2CC2983D006111FC /* MockChurchResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 6989C35C2CB7C1350033B308 /* MockChurchResponse.json */; };
-		6913D9732C3847B5005EC42B /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 6913D9722C3847B5005EC42B /* Amplify */; };
-		6913D9752C3847C5005EC42B /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 6913D9742C3847C5005EC42B /* AWSCognitoAuthPlugin */; };
 		691A9C4D2C49FEA100C1C395 /* Church.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691A9C4C2C49FEA100C1C395 /* Church.swift */; };
 		69223DF32CDA5DF1003C2A30 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69223DF22CDA5DF1003C2A30 /* Helper.swift */; };
 		69223DF52CDA6B28003C2A30 /* MockMissionaryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 69223DF42CDA6B28003C2A30 /* MockMissionaryResponse.json */; };
@@ -29,8 +27,11 @@
 		69531F0B2D13A89500534446 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69531F082D13A89500534446 /* ResetPasswordView.swift */; };
 		695D1D6D2CD36BC30015827C /* ChurchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695D1D6C2CD36BC30015827C /* ChurchDetailView.swift */; };
 		695E38F82BBCF67F0053979E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E38F72BBCF67F0053979E /* OnboardingView.swift */; };
-		695E38FF2BBD324F0053979E /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695E38FE2BBD324F0053979E /* OnboardingPage.swift */; };
 		6961A0082BBBA5F90012B441 /* LandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6961A0072BBBA5F90012B441 /* LandingViewModel.swift */; };
+		698044EA2D3B643600111492 /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698044E92D3B643600111492 /* OnboardingPage.swift */; };
+		698044EC2D3B712300111492 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 698044EB2D3B712300111492 /* Amplify */; };
+		698044EE2D3B712B00111492 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 698044ED2D3B712B00111492 /* AWSCognitoAuthPlugin */; };
+		698044F12D3D15AE00111492 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698044F02D3D15AE00111492 /* ProfileView.swift */; };
 		69854FB52D13151100AAFC28 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69854FB32D13151100AAFC28 /* SplashScreen.swift */; };
 		6999BD292BBA472A00082470 /* ConnectedInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999BD282BBA472A00082470 /* ConnectedInApp.swift */; };
 		6999BD2B2BBA472A00082470 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999BD2A2BBA472A00082470 /* ContentView.swift */; };
@@ -57,7 +58,19 @@
 		699E49252CEDE827003129AB /* DonationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E49242CEDE827003129AB /* DonationViewModel.swift */; };
 		699E49272CEDFAE3003129AB /* RoundUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E49262CEDFAE3003129AB /* RoundUp.swift */; };
 		699E49292CEF11F1003129AB /* QuickActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E49282CEF11F0003129AB /* QuickActionButton.swift */; };
+		69A89EBC2D2839A700452CEC /* AppInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A89EBB2D2839A700452CEC /* AppInitializer.swift */; };
+		69A89EBF2D283B7700452CEC /* ConfirmCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A89EBE2D283B7700452CEC /* ConfirmCodeView.swift */; };
+		69A89EC12D283B8400452CEC /* MFACodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A89EC02D283B8400452CEC /* MFACodeView.swift */; };
+		69A89EC32D283F8B00452CEC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A89EC22D283F8B00452CEC /* SignUpView.swift */; };
 		69AC67A02CF17A3400AC0BB4 /* TransportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AC679F2CF17A3400AC0BB4 /* TransportButton.swift */; };
+		69C816B32D1416C900B38FB4 /* init-db.js in Resources */ = {isa = PBXBuildFile; fileRef = 69C816A72D1416C900B38FB4 /* init-db.js */; };
+		69C816B42D1416C900B38FB4 /* create.js in Resources */ = {isa = PBXBuildFile; fileRef = 69C816A92D1416C900B38FB4 /* create.js */; };
+		69C816B52D1416C900B38FB4 /* get.js in Resources */ = {isa = PBXBuildFile; fileRef = 69C816AA2D1416C900B38FB4 /* get.js */; };
+		69C816B62D1416C900B38FB4 /* list.js in Resources */ = {isa = PBXBuildFile; fileRef = 69C816AB2D1416C900B38FB4 /* list.js */; };
+		69C816B72D1416C900B38FB4 /* update.js in Resources */ = {isa = PBXBuildFile; fileRef = 69C816AC2D1416C900B38FB4 /* update.js */; };
+		69C816B82D1416C900B38FB4 /* package.json in Resources */ = {isa = PBXBuildFile; fileRef = 69C816B02D1416C900B38FB4 /* package.json */; };
+		69C816B92D1416C900B38FB4 /* serverless.yml in Resources */ = {isa = PBXBuildFile; fileRef = 69C816B12D1416C900B38FB4 /* serverless.yml */; };
+		69C816BC2D1418B000B38FB4 /* AWSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C816BA2D1418B000B38FB4 /* AWSConfig.swift */; };
 		69C8E6B32BCCD9FC00578F9E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8E6B22BCCD9FC00578F9E /* LoginView.swift */; };
 		69C8E6BA2BD1613800578F9E /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8E6B92BD1613800578F9E /* FloatingTextField.swift */; };
 		69C8E6C02BD1F56C00578F9E /* DashboardUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C8E6BF2BD1F56C00578F9E /* DashboardUserView.swift */; };
@@ -74,6 +87,8 @@
 		69E7A85A2D14020D00BDBBC9 /* AuthViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E7A8562D14020D00BDBBC9 /* AuthViewModelTests.swift */; };
 		69E7A85B2D14020D00BDBBC9 /* MockAmplify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E7A8572D14020D00BDBBC9 /* MockAmplify.swift */; };
 		69E7A85C2D14020D00BDBBC9 /* MockSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E7A8582D14020D00BDBBC9 /* MockSessionManager.swift */; };
+		69EEBA402D141C640050D05D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEBA3F2D141C640050D05D /* APIClient.swift */; };
+		69EEBA432D141CC70050D05D /* AuthCognitoTokensProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEBA412D141CC70050D05D /* AuthCognitoTokensProvider.swift */; };
 		69EED6BB2C5DD2A000FA9676 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EED6BA2C5DD2A000FA9676 /* LocationsViewModel.swift */; };
 		69EED6BD2C5DD2F900FA9676 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EED6BC2C5DD2F900FA9676 /* Location.swift */; };
 		69EED6BF2C5DD65A00FA9676 /* LocationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EED6BE2C5DD65A00FA9676 /* LocationsService.swift */; };
@@ -149,8 +164,9 @@
 		69531F082D13A89500534446 /* ResetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		695D1D6C2CD36BC30015827C /* ChurchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchDetailView.swift; sourceTree = "<group>"; };
 		695E38F72BBCF67F0053979E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		695E38FE2BBD324F0053979E /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
 		6961A0072BBBA5F90012B441 /* LandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewModel.swift; sourceTree = "<group>"; };
+		698044E92D3B643600111492 /* OnboardingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
+		698044F02D3D15AE00111492 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		69854FB32D13151100AAFC28 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		6989C35C2CB7C1350033B308 /* MockChurchResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockChurchResponse.json; sourceTree = "<group>"; };
 		6999BD252BBA472A00082470 /* ConnectedIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectedIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,7 +197,19 @@
 		699E49242CEDE827003129AB /* DonationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewModel.swift; sourceTree = "<group>"; };
 		699E49262CEDFAE3003129AB /* RoundUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUp.swift; sourceTree = "<group>"; };
 		699E49282CEF11F0003129AB /* QuickActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionButton.swift; sourceTree = "<group>"; };
+		69A89EBB2D2839A700452CEC /* AppInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitializer.swift; sourceTree = "<group>"; };
+		69A89EBE2D283B7700452CEC /* ConfirmCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCodeView.swift; sourceTree = "<group>"; };
+		69A89EC02D283B8400452CEC /* MFACodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFACodeView.swift; sourceTree = "<group>"; };
+		69A89EC22D283F8B00452CEC /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		69AC679F2CF17A3400AC0BB4 /* TransportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportButton.swift; sourceTree = "<group>"; };
+		69C816A72D1416C900B38FB4 /* init-db.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "init-db.js"; sourceTree = "<group>"; };
+		69C816A92D1416C900B38FB4 /* create.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = create.js; sourceTree = "<group>"; };
+		69C816AA2D1416C900B38FB4 /* get.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = get.js; sourceTree = "<group>"; };
+		69C816AB2D1416C900B38FB4 /* list.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = list.js; sourceTree = "<group>"; };
+		69C816AC2D1416C900B38FB4 /* update.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = update.js; sourceTree = "<group>"; };
+		69C816B02D1416C900B38FB4 /* package.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+		69C816B12D1416C900B38FB4 /* serverless.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = serverless.yml; sourceTree = "<group>"; };
+		69C816BA2D1418B000B38FB4 /* AWSConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSConfig.swift; sourceTree = "<group>"; };
 		69C8E6B22BCCD9FC00578F9E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		69C8E6B92BD1613800578F9E /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
 		69C8E6BF2BD1F56C00578F9E /* DashboardUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUserView.swift; sourceTree = "<group>"; };
@@ -198,6 +226,8 @@
 		69E7A8562D14020D00BDBBC9 /* AuthViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModelTests.swift; sourceTree = "<group>"; };
 		69E7A8572D14020D00BDBBC9 /* MockAmplify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAmplify.swift; sourceTree = "<group>"; };
 		69E7A8582D14020D00BDBBC9 /* MockSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSessionManager.swift; sourceTree = "<group>"; };
+		69EEBA3F2D141C640050D05D /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = ConnectedIn/Networking/APIClient.swift; sourceTree = SOURCE_ROOT; };
+		69EEBA412D141CC70050D05D /* AuthCognitoTokensProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthCognitoTokensProvider.swift; sourceTree = "<group>"; };
 		69EED6BA2C5DD2A000FA9676 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		69EED6BC2C5DD2F900FA9676 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		69EED6BE2C5DD65A00FA9676 /* LocationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsService.swift; sourceTree = "<group>"; };
@@ -237,9 +267,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6913D9732C3847B5005EC42B /* Amplify in Frameworks */,
-				6913D9752C3847C5005EC42B /* AWSCognitoAuthPlugin in Frameworks */,
 				AA7DA6C34EEBE02C41C33234 /* Pods_ConnectedIn.framework in Frameworks */,
+				698044EC2D3B712300111492 /* Amplify in Frameworks */,
+				698044EE2D3B712B00111492 /* AWSCognitoAuthPlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,9 +427,17 @@
 			isa = PBXGroup;
 			children = (
 				695E38F72BBCF67F0053979E /* OnboardingView.swift */,
-				695E38FE2BBD324F0053979E /* OnboardingPage.swift */,
+				698044E92D3B643600111492 /* OnboardingPage.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		698044EF2D3D159600111492 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				698044F02D3D15AE00111492 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		69854FB42D13151100AAFC28 /* Splash */ = {
@@ -413,6 +451,7 @@
 		69854FB62D13151D00AAFC28 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				69A89EC22D283F8B00452CEC /* SignUpView.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -430,6 +469,7 @@
 		6999BD1C2BBA472A00082470 = {
 			isa = PBXGroup;
 			children = (
+				69C816B22D1416C900B38FB4 /* backend */,
 				6999BD272BBA472A00082470 /* ConnectedIn */,
 				6999BD382BBA472B00082470 /* ConnectedInTests */,
 				6999BD422BBA472B00082470 /* ConnectedInUITests */,
@@ -455,6 +495,7 @@
 			isa = PBXGroup;
 			children = (
 				6913D9762C3847E7005EC42B /* Info.plist */,
+				69C816BB2D1418B000B38FB4 /* Config */,
 				6999BD5C2BBAF9CE00082470 /* Utilities */,
 				6999BD552BBA4EC500082470 /* Networking */,
 				6999BD522BBA4E4000082470 /* Models */,
@@ -462,6 +503,7 @@
 				6999BD532BBA4E4800082470 /* Views */,
 				6999BD282BBA472A00082470 /* ConnectedInApp.swift */,
 				6999BD2A2BBA472A00082470 /* ContentView.swift */,
+				69A89EBB2D2839A700452CEC /* AppInitializer.swift */,
 				6999BD2C2BBA472B00082470 /* Assets.xcassets */,
 				6999BD2E2BBA472B00082470 /* Preview Content */,
 			);
@@ -512,14 +554,13 @@
 		6999BD532BBA4E4800082470 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				69A89EBD2D283B5B00452CEC /* Authentication */,
 				69531F072D13A89500534446 /* ForgotPassword */,
 				69531F092D13A89500534446 /* ResetPassword */,
 				69FB93AA2CAC797E00F02190 /* Helpers */,
 				69C8E6C22BD1F59400578F9E /* Admin */,
 				69C8E6C12BD1F58E00578F9E /* User */,
-				69C8E6B42BD15D7400578F9E /* Login */,
 				69854FB42D13151100AAFC28 /* Splash */,
-				69854FB62D13151D00AAFC28 /* SignUp */,
 				695E38FB2BBCF8F20053979E /* Onboarding */,
 				6999BD5A2BBA5A3D00082470 /* LandingView.swift */,
 				69C8E6B72BD1611500578F9E /* Others */,
@@ -586,12 +627,78 @@
 			path = SupportingViews;
 			sourceTree = "<group>";
 		};
+		69A89EBD2D283B5B00452CEC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				69C8E6B42BD15D7400578F9E /* Login */,
+				69854FB62D13151D00AAFC28 /* SignUp */,
+				69A89EBE2D283B7700452CEC /* ConfirmCodeView.swift */,
+				69A89EC02D283B8400452CEC /* MFACodeView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		69AC679E2CF17A2400AC0BB4 /* SupportingViews */ = {
 			isa = PBXGroup;
 			children = (
 				69AC679F2CF17A3400AC0BB4 /* TransportButton.swift */,
 			);
 			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		69C816A82D1416C900B38FB4 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				69C816A72D1416C900B38FB4 /* init-db.js */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		69C816AD2D1416C900B38FB4 /* churches */ = {
+			isa = PBXGroup;
+			children = (
+				69C816A92D1416C900B38FB4 /* create.js */,
+				69C816AA2D1416C900B38FB4 /* get.js */,
+				69C816AB2D1416C900B38FB4 /* list.js */,
+				69C816AC2D1416C900B38FB4 /* update.js */,
+			);
+			path = churches;
+			sourceTree = "<group>";
+		};
+		69C816AE2D1416C900B38FB4 /* handlers */ = {
+			isa = PBXGroup;
+			children = (
+				69C816AD2D1416C900B38FB4 /* churches */,
+			);
+			path = handlers;
+			sourceTree = "<group>";
+		};
+		69C816AF2D1416C900B38FB4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				69C816AE2D1416C900B38FB4 /* handlers */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		69C816B22D1416C900B38FB4 /* backend */ = {
+			isa = PBXGroup;
+			children = (
+				69C816A82D1416C900B38FB4 /* scripts */,
+				69C816AF2D1416C900B38FB4 /* src */,
+				69C816B02D1416C900B38FB4 /* package.json */,
+				69C816B12D1416C900B38FB4 /* serverless.yml */,
+			);
+			name = backend;
+			path = ../backend;
+			sourceTree = "<group>";
+		};
+		69C816BB2D1418B000B38FB4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				69C816BA2D1418B000B38FB4 /* AWSConfig.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		69C8E6B42BD15D7400578F9E /* Login */ = {
@@ -623,8 +730,6 @@
 		69C8E6BB2BD178DB00578F9E /* TabPages */ = {
 			isa = PBXGroup;
 			children = (
-				6945A9882CAF6F1800656F6F /* Contribute */,
-				691A9C462C48AAF100C1C395 /* Connect */,
 				691A9C452C48AAE300C1C395 /* Home */,
 				69C8E6BF2BD1F56C00578F9E /* DashboardUserView.swift */,
 			);
@@ -643,10 +748,12 @@
 		69C8E6C12BD1F58E00578F9E /* User */ = {
 			isa = PBXGroup;
 			children = (
-				69FB93A72CABEFDD00F02190 /* Contribute */,
+				698044EF2D3D159600111492 /* Profile */,
 				6901AEBE2BFC31F900EDA966 /* Communities */,
+				6945A9882CAF6F1800656F6F /* Contribute */,
 				6901AEBD2BFC31D400EDA966 /* Missionaries */,
 				6901AEBC2BFC31C900EDA966 /* Churches */,
+				691A9C462C48AAF100C1C395 /* Connect */,
 				69C8E6BB2BD178DB00578F9E /* TabPages */,
 			);
 			path = User;
@@ -703,6 +810,15 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		69EEBA422D141CC70050D05D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				69EEBA412D141CC70050D05D /* AuthCognitoTokensProvider.swift */,
+			);
+			name = Auth;
+			path = ConnectedIn/Networking/Auth;
+			sourceTree = SOURCE_ROOT;
+		};
 		69EED6B92C5DD27500FA9676 /* Connect */ = {
 			isa = PBXGroup;
 			children = (
@@ -742,6 +858,8 @@
 		69FB93A12CAAFDDC00F02190 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				69EEBA422D141CC70050D05D /* Auth */,
+				69EEBA3F2D141C640050D05D /* APIClient.swift */,
 				6989C35A2CB656A90033B308 /* Mocks */,
 				69FB93A22CAAFE0000F02190 /* ContributionService.swift */,
 				691393362CC2286A006111FC /* ChurchService.swift */,
@@ -758,13 +876,6 @@
 				699E49152CEDD00D003129AB /* RoundUpViewModel.swift */,
 				699E49172CEDD02F003129AB /* DirectGivingViewModel.swift */,
 				699E49242CEDE827003129AB /* DonationViewModel.swift */,
-			);
-			path = Contribute;
-			sourceTree = "<group>";
-		};
-		69FB93A72CABEFDD00F02190 /* Contribute */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = Contribute;
 			sourceTree = "<group>";
@@ -863,8 +974,8 @@
 			);
 			name = ConnectedIn;
 			packageProductDependencies = (
-				6913D9722C3847B5005EC42B /* Amplify */,
-				6913D9742C3847C5005EC42B /* AWSCognitoAuthPlugin */,
+				698044EB2D3B712300111492 /* Amplify */,
+				698044ED2D3B712B00111492 /* AWSCognitoAuthPlugin */,
 			);
 			productName = ConnectedIn;
 			productReference = 6999BD252BBA472A00082470 /* ConnectedIn.app */;
@@ -960,12 +1071,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C816B82D1416C900B38FB4 /* package.json in Resources */,
+				69C816B42D1416C900B38FB4 /* create.js in Resources */,
 				6999BD302BBA472B00082470 /* Preview Assets.xcassets in Resources */,
+				69C816B62D1416C900B38FB4 /* list.js in Resources */,
+				69C816B72D1416C900B38FB4 /* update.js in Resources */,
 				6999BD2D2BBA472B00082470 /* Assets.xcassets in Resources */,
 				69223DF52CDA6B28003C2A30 /* MockMissionaryResponse.json in Resources */,
 				6913933F2CC2983D006111FC /* MockChurchResponse.json in Resources */,
+				69C816B52D1416C900B38FB4 /* get.js in Resources */,
+				69C816B32D1416C900B38FB4 /* init-db.js in Resources */,
 				69D6DE072CDB959C0053E1F3 /* MockMinistryResponse.json in Resources */,
 				AEC5C3EB15CA4A292458D462 /* awsconfiguration.json in Resources */,
+				69C816B92D1416C900B38FB4 /* serverless.yml in Resources */,
 				8699F1FFF78BFA813A6ECCBA /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1096,11 +1214,14 @@
 			files = (
 				6901AEB22BE5266300EDA966 /* HomeView.swift in Sources */,
 				69DF8AA02CDD14F3005D8FB4 /* ConnectView.swift in Sources */,
+				69A89EBC2D2839A700452CEC /* AppInitializer.swift in Sources */,
 				69C8E6C72BD1F5E000578F9E /* UserTabStore.swift in Sources */,
 				691A9C4D2C49FEA100C1C395 /* Church.swift in Sources */,
 				69EED6CA2C5DD8CB00FA9676 /* ChurchesLocationDetailView.swift in Sources */,
 				69FB93B62CAE6E2400F02190 /* Ministry.swift in Sources */,
 				69223DF32CDA5DF1003C2A30 /* Helper.swift in Sources */,
+				69A89EBF2D283B7700452CEC /* ConfirmCodeView.swift in Sources */,
+				69C816BC2D1418B000B38FB4 /* AWSConfig.swift in Sources */,
 				6999BD592BBA4FAD00082470 /* User.swift in Sources */,
 				691393372CC2286A006111FC /* ChurchService.swift in Sources */,
 				6901AEC32C1707AD00EDA966 /* UserDefaultsManager.swift in Sources */,
@@ -1110,7 +1231,9 @@
 				6913933B2CC23CEB006111FC /* ChurchViewModel.swift in Sources */,
 				6999BD5B2BBA5A3D00082470 /* LandingView.swift in Sources */,
 				69FB93B42CAE6E0500F02190 /* Missionary.swift in Sources */,
+				698044EA2D3B643600111492 /* OnboardingPage.swift in Sources */,
 				699E49102CEDC9EE003129AB /* RoundUpGivingView.swift in Sources */,
+				69EEBA432D141CC70050D05D /* AuthCognitoTokensProvider.swift in Sources */,
 				6939D07E2CA39C7700519392 /* AuthViewModel.swift in Sources */,
 				699E49272CEDFAE3003129AB /* RoundUp.swift in Sources */,
 				695D1D6D2CD36BC30015827C /* ChurchDetailView.swift in Sources */,
@@ -1132,7 +1255,6 @@
 				69531F0A2D13A89500534446 /* ForgotPasswordView.swift in Sources */,
 				69D6DE052CDB88A20053E1F3 /* HomeHeaderView.swift in Sources */,
 				699E49182CEDD02F003129AB /* DirectGivingViewModel.swift in Sources */,
-				695E38FF2BBD324F0053979E /* OnboardingPage.swift in Sources */,
 				699E491B2CEDE22D003129AB /* RoundUpRowView.swift in Sources */,
 				695E38F82BBCF67F0053979E /* OnboardingView.swift in Sources */,
 				69FB93B92CAE6E6C00F02190 /* FeaturedViewModel.swift in Sources */,
@@ -1145,7 +1267,9 @@
 				6937C7002CAEBC0A007D99EE /* FeaturedMinistryCardView.swift in Sources */,
 				69EED6C42C5DD84A00FA9676 /* ChurchesLocationListView.swift in Sources */,
 				699E49212CEDE2F2003129AB /* MissionaryRowView.swift in Sources */,
+				698044F12D3D15AE00111492 /* ProfileView.swift in Sources */,
 				6999BD292BBA472A00082470 /* ConnectedInApp.swift in Sources */,
+				69EEBA402D141C640050D05D /* APIClient.swift in Sources */,
 				6913933E2CC240AA006111FC /* Constants.swift in Sources */,
 				69C8E6BA2BD1613800578F9E /* FloatingTextField.swift in Sources */,
 				69EED6C82C5DD8B100FA9676 /* ChurchesMapAnnotationView.swift in Sources */,
@@ -1159,11 +1283,13 @@
 				699E491D2CEDE2B2003129AB /* DonationView.swift in Sources */,
 				69AC67A02CF17A3400AC0BB4 /* TransportButton.swift in Sources */,
 				69CC65032CD905E80020D75E /* ChurchesListView.swift in Sources */,
+				69A89EC12D283B8400452CEC /* MFACodeView.swift in Sources */,
 				69FB93A32CAAFE0000F02190 /* ContributionService.swift in Sources */,
 				69FB93A62CAB050300F02190 /* ContributionViewModel.swift in Sources */,
 				69C8E6B32BCCD9FC00578F9E /* LoginView.swift in Sources */,
 				69854FB52D13151100AAFC28 /* SplashScreen.swift in Sources */,
 				69EED6C62C5DD88900FA9676 /* ChurchesLocationPreviewView.swift in Sources */,
+				69A89EC32D283F8B00452CEC /* SignUpView.swift in Sources */,
 				6999BD5F2BBAF9EF00082470 /* ColorExtensions.swift in Sources */,
 				69FB93C02CAE769300F02190 /* FeaturedChurchCardView.swift in Sources */,
 				699E490E2CEDC9DE003129AB /* ContributeCardView.swift in Sources */,
@@ -2059,12 +2185,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6913D9722C3847B5005EC42B /* Amplify */ = {
+		698044EB2D3B712300111492 /* Amplify */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6913D96D2C38375B005EC42B /* XCRemoteSwiftPackageReference "amplify-swift" */;
 			productName = Amplify;
 		};
-		6913D9742C3847C5005EC42B /* AWSCognitoAuthPlugin */ = {
+		698044ED2D3B712B00111492 /* AWSCognitoAuthPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6913D96D2C38375B005EC42B /* XCRemoteSwiftPackageReference "amplify-swift" */;
 			productName = AWSCognitoAuthPlugin;

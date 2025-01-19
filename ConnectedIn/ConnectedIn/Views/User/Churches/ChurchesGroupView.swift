@@ -106,11 +106,9 @@ struct ChurchesGroupView: View {
 struct RegionCardButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .frame(minHeight: 44) // Minimum touch target
-            .contentShape(Rectangle())
-            .opacity(configuration.isPressed ? 0.9 : 1.0)
-            .scaleEffect(configuration.isPressed ? 0.98 : 1.0)
+            .scaleEffect(configuration.isPressed ? 0.97 : 1.0)
             .animation(.easeInOut(duration: 0.2), value: configuration.isPressed)
+            .brightness(configuration.isPressed ? -0.05 : 0)
     }
 }
 
@@ -163,18 +161,18 @@ struct ModernRegionCardView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            ZStack(alignment: .topLeading) {
+            ZStack {
                 // Background Image
                 Image(coverImage)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(height: 200)
+                    .frame(height: 220)
                     .clipped()
                 
                 // Gradient Overlay for better text contrast
                 LinearGradient(
                     gradient: Gradient(colors: [
-                        .black.opacity(0.4),
+                        .black.opacity(0.1),
                         .black.opacity(0.7)
                     ]),
                     startPoint: .top,
@@ -182,37 +180,43 @@ struct ModernRegionCardView: View {
                 )
                 
                 // Content Overlay
-                VStack(alignment: .leading, spacing: 12) {
-                    Text(region)
-                        .font(.system(size: 13, weight: .semibold))
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 6)
-                        .background(Color.white.opacity(0.2))
-                        .clipShape(Capsule())
-                    
+                VStack(alignment: .leading) {
                     Spacer()
-                    
-                    VStack(alignment: .leading, spacing: 8) {
+                    VStack(alignment: .leading, spacing: 16) {
+                        // Region Tag
                         Text(region)
-                            .font(.system(size: 24, weight: .bold))
+                            .font(.system(size: 12, weight: .medium))
                             .foregroundColor(.white)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 6)
+                            .background(Color.white.opacity(0.15))
+                            .clipShape(Capsule())
                         
-                        HStack(spacing: 6) {
-                            Image(systemName: "building.2.fill")
-                                .foregroundColor(Color.connectedInMain)
-                            Text("\(churchCount) Churches")
-                                .font(.system(size: 17))
+                        // Region Name and Count
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text(region)
+                                .font(.system(size: 28, weight: .bold))
                                 .foregroundColor(.white)
+                            
+                            HStack(spacing: 6) {
+                                Image(systemName: "building.2.fill")
+                                    .foregroundColor(Color.connectedInMain)
+                                Text("\(churchCount) churches")
+                                    .font(.system(size: 15))
+                                    .foregroundColor(.white.opacity(0.9))
+                            }
                         }
                     }
+                    .padding(20)
                 }
-                .padding(16)
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
-        .frame(maxWidth: .infinity)
-        .background(Color.white)
-        .clipShape(RoundedRectangle(cornerRadius: 16))
-        .shadow(color: Color.black.opacity(0.1), radius: 10, x: 0, y: 5)
+        .clipShape(RoundedRectangle(cornerRadius: 24))
+        .shadow(color: Color.black.opacity(0.15), radius: 10, x: 0, y: 5)
+        .overlay(
+            RoundedRectangle(cornerRadius: 24)
+                .stroke(Color.white.opacity(0.1), lineWidth: 0.5)
+        )
     }
 }

@@ -11,6 +11,9 @@ import Combine
 protocol ChurchServiceProtocol {
     func fetchChurches() -> AnyPublisher<[Church], Error>
     func fetchChurchesLocalData() -> AnyPublisher<[Church], Error>
+    func createChurch(_ church: Church) -> AnyPublisher<Church, Error>
+    func updateChurch(_ church: Church) -> AnyPublisher<Church, Error>
+    func getChurch(id: String) -> AnyPublisher<Church, Error>
 }
 
 protocol MockChurchServiceProtocol {
@@ -19,9 +22,10 @@ protocol MockChurchServiceProtocol {
 
 class ChurchService: ChurchServiceProtocol, ObservableObject {
     static let shared = ChurchService()
-    private let baseURL = URL(string: "https://api.example.com")!
+    private let apiClient = APIClient.shared
     private let session: URLSession
     private var hasLoadedChurches = false
+    private var cancellables = Set<AnyCancellable>()
     
     @Published private var cachedChurches: [Church] = []
     
@@ -29,17 +33,101 @@ class ChurchService: ChurchServiceProtocol, ObservableObject {
         self.session = session
     }
     
-    func fetchChurches() -> AnyPublisher<[Church], any Error> {
-        let url = baseURL.appendingPathComponent("church")
-        
-        return session.dataTaskPublisher(for: url)
-            .map(\.data)
-            .decode(type: ChurchResponse.self, decoder: JSONDecoder())
-            .map(\.churches)
-            .eraseToAnyPublisher()
+    func fetchChurches() -> AnyPublisher<[Church], Error> {
+        return Future { promise in
+            Task {
+                do {
+                    let response: ChurchResponse = try await self.apiClient.request(endpoint: "/churches")
+                    
+                    // Cache the churches for offline use
+                    self.cachedChurches = response.churches
+                    self.hasLoadedChurches = true
+                    
+                    promise(.success(response.churches))
+                } catch let error as APIError {
+                    print("❌ API Error: \(error.message)")
+                    
+                    // If API fails, try to use cached data
+                    if !self.cachedChurches.isEmpty {
+                        print("📱 Using cached churches data")
+                        promise(.success(self.cachedChurches))
+                    } else {
+                        // If no cached data, try local mock data
+                        print("📄 Falling back to local mock data")
+                        self.fetchChurchesLocalData()
+                            .sink(
+                                receiveCompletion: { completion in
+                                    if case .failure(let error) = completion {
+                                        promise(.failure(error))
+                                    }
+                                },
+                                receiveValue: { churches in
+                                    promise(.success(churches))
+                                }
+                            )
+                            .store(in: &self.cancellables)
+                    }
+                } catch {
+                    print("❌ Unknown error: \(error)")
+                    promise(.failure(error))
+                }
+            }
+        }.eraseToAnyPublisher()
     }
     
-    func fetchChurchesLocalData() -> AnyPublisher<[Church], any Error> {
+    func createChurch(_ church: Church) -> AnyPublisher<Church, Error> {
+        return Future { promise in
+            Task {
+                do {
+                    let encoder = JSONEncoder()
+                    let data = try encoder.encode(church)
+                    let createdChurch: Church = try await self.apiClient.request(
+                        endpoint: "/churches",
+                        method: "POST",
+                        body: data
+                    )
+                    promise(.success(createdChurch))
+                } catch {
+                    promise(.failure(error))
+                }
+            }
+        }.eraseToAnyPublisher()
+    }
+    
+    func updateChurch(_ church: Church) -> AnyPublisher<Church, Error> {
+        return Future { promise in
+            Task {
+                do {
+                    let encoder = JSONEncoder()
+                    let data = try encoder.encode(church)
+                    let updatedChurch: Church = try await self.apiClient.request(
+                        endpoint: "/churches/\(church.id)",
+                        method: "PUT",
+                        body: data
+                    )
+                    promise(.success(updatedChurch))
+                } catch {
+                    promise(.failure(error))
+                }
+            }
+        }.eraseToAnyPublisher()
+    }
+    
+    func getChurch(id: String) -> AnyPublisher<Church, Error> {
+        return Future { promise in
+            Task {
+                do {
+                    let church: Church = try await self.apiClient.request(endpoint: "/churches/\(id)")
+                    promise(.success(church))
+                } catch {
+                    promise(.failure(error))
+                }
+            }
+        }.eraseToAnyPublisher()
+    }
+    
+    // Keep the local data method for testing/offline functionality
+    func fetchChurchesLocalData() -> AnyPublisher<[Church], Error> {
         
         if hasLoadedChurches {
             return Just(cachedChurches)
@@ -154,16 +242,16 @@ class MockChurchService: MockChurchServiceProtocol {
             .eraseToAnyPublisher()
     }
     
-    func fetchChurches() -> AnyPublisher<[Church], Error> {
-        guard let url = Bundle.main.url(forResource: "MockChurchResponse", withExtension: "json"),
-              let data = try? Data(contentsOf: url) else {
-            return Fail(error: NSError(domain: "MockChurchService", code: 0, userInfo: [NSLocalizedDescriptionKey: "Failed to load mock data"]))
-                .eraseToAnyPublisher()
-        }
-        
-        return Just(data)
-            .decode(type: ChurchResponse.self, decoder: JSONDecoder())
-            .map(\.churches)
-            .eraseToAnyPublisher()
-    }
+//    func fetchChurches() -> AnyPublisher<[Church], Error> {
+//        guard let url = Bundle.main.url(forResource: "MockChurchResponse", withExtension: "json"),
+//              let data = try? Data(contentsOf: url) else {
+//            return Fail(error: NSError(domain: "MockChurchService", code: 0, userInfo: [NSLocalizedDescriptionKey: "Failed to load mock data"]))
+//                .eraseToAnyPublisher()
+//        }
+//        
+//        return Just(data)
+//            .decode(type: ChurchResponse.self, decoder: JSONDecoder())
+//            .map(\.churches)
+//            .eraseToAnyPublisher()
+//    }
 }

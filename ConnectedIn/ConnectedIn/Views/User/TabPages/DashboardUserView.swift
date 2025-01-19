@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DashboardUserView: View {
     @EnvironmentObject var sessionManager: SessionManager
+    @EnvironmentObject var authViewModel: AuthViewModel
     @ObservedObject var tabStore: UserTabStore
     @ObservedObject var dashboardStore: UserDashboardViewModel
     
@@ -25,7 +26,7 @@ struct DashboardUserView: View {
                  UserTabBarPage(icon: "settingsIcon", tag: .profile, text: "Profile"),]
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 TabView(selection: $selectedTab) {
                     HomeView(tabStore: tabStore, dashboardStore: dashboardStore, isButtonTapped: $isDetailsViewHidden).environmentObject(sessionManager)
@@ -57,7 +58,7 @@ struct DashboardUserView: View {
                         }
                         .tag(2)
                     
-                    HomeView(tabStore: tabStore, dashboardStore: dashboardStore, isButtonTapped: $isDetailsViewHidden).environmentObject(sessionManager)
+                    ProfileView()
                         .tabItem() {
                             Image("settingsIcon")
                                 .frame(width: 20, height: 20)
