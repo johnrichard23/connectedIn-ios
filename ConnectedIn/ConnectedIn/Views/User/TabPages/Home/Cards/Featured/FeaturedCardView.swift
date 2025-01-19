@@ -356,7 +356,7 @@ private struct AdaptiveImageView: View {
                     .onAppear {
                         // Debug print to verify asset loading
                         #if DEBUG
-                        print("Loading local image: \(imageSource)")
+                        print("Loading image: \(imageSource)")
                         #endif
                 }
             }

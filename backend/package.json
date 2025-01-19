@@ -1,0 +1,20 @@
+{
+  "name": "connectedin-backend",
+  "version": "1.0.0",
+  "description": "ConnectedIn Backend API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "deploy": "serverless deploy"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1510.0",
+    "deploy": "^1.0.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "serverless": "^3.40.0",
+    "serverless-iam-roles-per-function": "^3.2.0"
+  }
+}

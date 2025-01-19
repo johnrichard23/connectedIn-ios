@@ -8,18 +8,20 @@
 import Foundation
 import Amplify
 import Combine
+import AWSCognitoAuthPlugin
+import AmplifyPlugins
 
 @MainActor
 class AuthViewModel: ObservableObject {
-    
-    @Published var isAuthenticated = false
     @Published var errorMessage: String?
+    @Published var isAuthenticated = false
+    
     private var signInResult: AuthSignInResult?
+    private let sessionManager: SessionManager
     
     var cancellables = Set<AnyCancellable>()
-    let sessionManager: SessionManager
     
-    init(sessionManager: SessionManager = .shared) {
+    init(sessionManager: SessionManager) {
         self.sessionManager = sessionManager
         sessionManager.authViewModel = self
     }
@@ -45,8 +47,10 @@ class AuthViewModel: ObservableObject {
             print("✅ Current session state: \(sessionManager.authState)")
         } catch {
             print("❌ Error getting current user: \(error)")
-            errorMessage = error.localizedDescription
-            isAuthenticated = false
+            await MainActor.run {
+                errorMessage = error.localizedDescription
+                isAuthenticated = false
+            }
         }
     }
     

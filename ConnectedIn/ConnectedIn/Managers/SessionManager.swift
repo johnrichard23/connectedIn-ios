@@ -37,9 +37,19 @@ class SessionManager: ObservableObject {
         }
     }
     
-    static let shared = SessionManager()
+    @Published var authState: AuthState = .onboarding
+    @Published var connectedInUser: User?
+    @Published var currentEmail: String = ""
+    weak var authViewModel: AuthViewModel?
     
-    @Published var authState: AuthState = .login
+    init() {
+        // Initialize with default state
+        if UserDefaults.standard.bool(forKey: "hasSeenOnboarding") {
+            self.authState = .login
+        } else {
+            self.authState = .onboarding
+        }
+    }
     
     func showLogin() {
         print("➡️ Showing login view")

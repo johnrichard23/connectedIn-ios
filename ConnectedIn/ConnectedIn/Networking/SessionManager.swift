@@ -12,13 +12,15 @@ import AuthenticationServices
 import AWSCognitoAuthPlugin
 import Combine
 import AmplifyPlugins
+import SwiftUI
 
 enum UserType {
     case church
     case user
 }
 
-enum AuthState {
+enum AuthState: Equatable {
+    case landing
     case onboarding
     case signUp
     case login
@@ -29,11 +31,43 @@ enum AuthState {
     case sessionChurch(user: AuthUser)
     case confirmCode(username: String)
     case confirmMFACode
+    
+    static func == (lhs: AuthState, rhs: AuthState) -> Bool {
+        switch (lhs, rhs) {
+        case (.landing, .landing),
+             (.onboarding, .onboarding),
+             (.signUp, .signUp),
+             (.login, .login),
+             (.forgotPassword, .forgotPassword),
+             (.resetPassword, .resetPassword),
+             (.confirmMFACode, .confirmMFACode):
+            return true
+        case let (.userDashboard(user1), .userDashboard(user2)):
+            return user1.username == user2.username
+        case let (.sessionUser(user1), .sessionUser(user2)):
+            return user1.username == user2.username
+        case let (.sessionChurch(user1), .sessionChurch(user2)):
+            return user1.username == user2.username
+        case let (.confirmCode(username1), .confirmCode(username2)):
+            return username1 == username2
+        default:
+            return false
+        }
+    }
 }
 
 final class SessionManager: ObservableObject {
     static let shared = SessionManager()
-    @Published var authState: AuthState = .onboarding
+    
+    @Published var authState: AuthState {
+        willSet {
+            print("SessionManager: Will change state from \(authState) to \(newValue)")
+        }
+        didSet {
+            print("SessionManager: Did change state from \(oldValue) to \(authState)")
+        }
+    }
+    
     var authViewModel: AuthViewModel?
     @Published var connectedInUser: User
     var currentEmail: String = ""
@@ -42,6 +76,7 @@ final class SessionManager: ObservableObject {
     var savedTokens: Tokens?
     
     internal init() {
+        self.authState = .landing  // Start with landing state
         self.connectedInUser = User(email: "")
     }
     
@@ -245,9 +280,20 @@ final class SessionManager: ObservableObject {
 //        }
 //    }
     
+    // MARK: - Navigation Methods
     
+    @MainActor
+    func showOnboarding() {
+        print("SessionManager: Changing state to onboarding")
+        self.authState = .onboarding
+        print("SessionManager: New state is \(self.authState)")
+    }
+    
+    @MainActor
     func showLogin() {
-        authState = .login
+        print("SessionManager: Changing state to login")
+        self.authState = .login
+        print("SessionManager: New state is \(self.authState)")
     }
     
     func showSignUp() {

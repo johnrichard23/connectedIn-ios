@@ -24,7 +24,7 @@ class ChurchViewModel: ObservableObject {
         isLoading = true
         error = nil
         
-        service.fetchChurchesLocalData()
+        service.fetchChurches()
             .receive(on: DispatchQueue.main)
             .sink { [weak self] completion in
                 self?.isLoading = false
